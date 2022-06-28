@@ -110,12 +110,14 @@
 		<div id="content">
 		
 		<!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                <video autoplay muted loop style="width: 100%; position: fixed;">
+                    <source src="content/slider/Globe - 5925.mp4" type="video/mp4">
+                </video>    
 
 			<div class="main-slider">
-				
-				<ul class="main-slider__slides" data-slick='{ "fade": true, "speed": 500, "autoplay": false, "infinite": true, "dots": true, "arrows": false }'>
-					<li style="background-image:url('content/slider/survey_background.jpg');">
-					
+
+                <ul class="main-slider__slides" data-slick='{ "fade": true, "speed": 500, "autoplay": false, "infinite": true, "dots": true, "arrows": false }'>
+                    <li>
 						<div class="main-slider-slide__content 
 									main-slider-slide__content--valign-middle 
 									main-slider-slide__content--align-center"> 
@@ -139,7 +141,7 @@
 						</div><!-- end .main-slider-slide__content -->	
 						
 					</li>
-					<li style="background-image:url('content/slider/drone_background_dark.jpg');">
+					<li>
 					
 						<div class="main-slider-slide__content 
 									main-slider-slide__content--valign-middle 
@@ -167,7 +169,7 @@
 
                     <div class="js-container container">     
 
-                    <li style="width: 1349px; background-image:url('content/slider/celebration_background_dark.jpg');">
+                    <li style="width: 1349px;">
 
                         <div class="main-slider-slide__content 
                                     main-slider-slide__content--valign-middle 
@@ -194,7 +196,7 @@
                         </li>
                     </div>
                     <div> 
-                    <li style="width: 1349px; background-image:url('content/slider/training_background.png');">
+                    <li style="width: 1349px;">
 
                         <div class="main-slider-slide__content 
                                     main-slider-slide__content--valign-middle 
@@ -229,10 +231,10 @@
 				
 			</div><!-- end .main-slider -->
             
-            <div id="products">
+            <div style="background: white; margin-top: 50px; position: relative;" id="products">
             	
                 <div class="row">
-                	<div class="span12 text-center">
+                	<div style="margin-top: 145px;" class="span12 text-center">
                     	
                         <div class="headline">
                         	
@@ -249,7 +251,8 @@
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-tv"></i>
+                                <!-- <i class="ifc-tv"></i> -->
+                                <img style="width: 103px;" src="assets/images/esri_icon.png">
                             </span>
       
                             <div class="icon-box-content">
@@ -258,10 +261,13 @@
                                     <a href="#">Esri Software</a>
                                 </h3>
                                 
-                                <p>Suspendisse elementum at tortor at laoreet. Vestibulum in lectus sit amet ligula consequat malesuada. 
-                                Etiam purus leo, porta ac quam vel, pellentesque rutrum purus. </p>
+                                <p>Esri builds the leading mapping and spatial analytics software designed 
+                                    to support the mission and business objectives of organizations around 
+                                    the globe, regardless of size. Esri's ArcGIS products run in the cloud, 
+                                    on mobile devices, and on desktops. Explore Esri’s product offerings that
+                                    match your business needs. </p>
                                 
-                                <a class="btn" href="#">read more </a>
+                                <a class="btn" target="_blank" href="esri_products.html">read more </a>
                             
                             </div><!-- end .icon-box-content -->
                             
@@ -270,7 +276,8 @@
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-toolbox"></i>
+                                <!-- <i class="ifc-toolbox"></i> -->
+                                <img style="width: 103px;" src="assets/images/autodesk_icon.png">
                             </span>
       
                             <div class="icon-box-content">
@@ -282,7 +289,7 @@
                                 <p>Praesent consequat congue ligula, nec luctus mauris scelerisque vel. Donec mattis gravida est, id malesuada 
                                 orci. In quis felis ut risus sodales condimentum non fringilla orci.</p>
                                 
-                                <a class="btn" href="#">read more </a>
+                                <a class="btn" target="_blank" href="autodesk_products.html">read more </a>
                             
                             </div><!-- end .icon-box-content -->
                             
@@ -294,7 +301,8 @@
                 		<div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-register_editor"></i>
+                                <!-- <i class="ifc-register_editor"></i> -->
+                                <img style="width: 92px;" src="assets/images/trimble_icon.png">
                             </span>
       
                             <div class="icon-box-content">
@@ -306,7 +314,7 @@
                                 <p>Cras dapibus rutrum tortor ut tincidunt. Vivamus eu velit dolor. Sed faucibus lorem quis purus rutrum, vel 
                                 tincidunt sapien bibendum imperdiet, felis quis tempus dolor. </p>
                                 
-                                <a class="btn" href="#">read more </a>
+                                <a class="btn" target="_blank" href="trimble_products.html">read more </a>
                             
                             </div><!-- end .icon-box-content -->
                             
@@ -315,7 +323,8 @@
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-increase_font"></i>
+                                <!-- <i class="ifc-increase_font"></i> -->
+                                <img style="width: 103px;" src="assets/images/hardware_icon.png">
                             </span>
       
                             <div class="icon-box-content">
@@ -327,7 +336,7 @@
                                 <p>Quisque tincidunt hendrerit urna, id gravida velit. Sed ligula enim, elementum dapibus nisl ut, sodales 
                                 ultrices nisi. Etiam facilisis nisl metus, sed tincidunt urna tempor.</p>
                                 
-                                <a class="btn" href="#">read more </a>
+                                <a class="btn" target="_blank" href="hardware_products.html">read more </a>
                             
                             </div><!-- end .icon-box-content -->
                             
@@ -338,9 +347,9 @@
                 
             </div><!-- end #products -->
             
-            <div id="services">
+            <div id="services" style="background: white; position: relative;">
             	
-                <div class="row">
+                <div class="row" style="margin-top: 24px;">
                 	<div class="span12 text-center">
                     	
                         <div class="headline">
@@ -405,10 +414,10 @@
                 
             </div><!-- end #services -->
 
-            <div id="training">
+            <div id="training" style="background: white; position: relative;">
             	
-                <div class="row">
-                	<div class="span12 text-center">
+                <div class="row" style="margin-top: -1px;">
+                	<div class="span12 text-center" style="margin-top: 147px;">
                     	
                         <div class="headline">
                         	
@@ -514,12 +523,12 @@
                 
             </div><!-- end #training -->
 
-            <div id="projects">
+            <div id="projects" style="background: white; position: relative;">
             	
                 <div class="row">
                     <div class="span12 text-center">
                         
-                        <div class="headline">
+                        <div class="headline" style="margin: 158px 0 3px 0;">
                             
                             <h2>Projects</h2>
                             
@@ -958,8 +967,10 @@
                         
                     </div><!-- end .item -->
                     
+
+
                     <div class="item term-1">
-                        
+	
                         <div class="portfolio-item">
                     
                             <div class="portfolio-item-preview">
@@ -1025,7 +1036,7 @@
                         </div><!-- end .portfolio-item -->
                         
                     </div><!-- end .item -->
-
+                    
                     <div class="item term-1">
                         
                         <div class="portfolio-item">
@@ -1060,7 +1071,7 @@
                         </div><!-- end .portfolio-item -->
                         
                     </div><!-- end .item -->
-
+                    
                     <div class="item term-2">
                         
                         <div class="portfolio-item">
@@ -1094,7 +1105,7 @@
                         </div><!-- end .portfolio-item -->
                         
                     </div><!-- end .item -->
-
+                    
                     <div class="item term-2">
                         
                         <div class="portfolio-item">
@@ -1129,7 +1140,7 @@
                         </div><!-- end .portfolio-item -->
                         
                     </div><!-- end .item -->
-
+                    
                     
                     <div class="item term-2">
                         
@@ -1165,43 +1176,9 @@
                         </div><!-- end .portfolio-item -->
                         
                     </div><!-- end .item -->
-
-                    <div class="item term-2">
-                        
-                        <div class="portfolio-item">
+                                        
+                    </div><!-- end .portfolio-grid -->
                     
-                            <div class="portfolio-item-preview">
-                                
-                                <img src="content/portfolio/480x360-12.png" alt="">
-                                
-                                <div class="portfolio-item-overlay">
-                                    
-                                    <div class="portfolio-item-description">
-                                        
-                                        <h4>
-                                            <a href="portfolio-item.html">UMEME Uganda Limited</a>
-                                        </h4>
-                                    
-                                        <p>Supply of GPS Mappers (Trimble TDC 100 4G) - 2020.</p>	
-                                        
-                                    </div><!-- end .portfolio-item-description -->
-                                    
-                                    <div class="portfolio-item-overlay-actions">
-                                                                                
-                                        <a class="btn" href="portfolio-item.html#umeme">visit other projects for client</a>
-                                        
-                                    </div><!-- end .portfolio-item-overlay-actions -->
-                                    
-                                </div><!-- end .portfolio-item-overlay -->
-                                
-                            </div><!-- end ,portfolio-item-preview -->
-                            
-                        </div><!-- end .portfolio-item -->
-                        
-                    </div><!-- end .item -->
-
-                </div><!-- end .portfolio-grid -->
-                
                 <br><br>
                 
                 <div class="row">
@@ -1214,12 +1191,12 @@
             
             </div><!-- #projects -->
 
-            <div id="news_events">
+            <div id="news_events" style="margin-top: -1px; background: white; position: relative;">
             	
                 <div class="row">
                 	<div class="span12 text-center">
                     	
-                        <div class="headline">
+                        <div class="headline" style="margin-top: 155px;">
                         	
                             <h2>News and Events</h2>
                             
@@ -1252,18 +1229,9 @@
                                 <h4>
                                     <a href="blog-post.html">GIC @ 20</a>
                                 </h4>
-                                
-                                <p>By <a href="#">John Doe</a> in <a href="#"><strong>General Posts</strong></a></p>
-                                
+                                                                
                             </div><!-- end .blog-post-title -->
-                            
-                            <p>Aliquam sem sit amet lobortis cras venenatis et magna non dictum  quisque imperdiet luctus dui at 
-                            ultricies. Maecenas ac pellentesque nisl. Vestibulum sollicitudin, tellus vitae dignissim condimentum, 
-                            nulla magna tristique risus. Vestibulum sed massa in dolor tempus consectetur. Maecenas aliquet id orci 
-                            vitae venenatis. </p>
-                            
-                            <a class="btn" href="blog-post.html">Read more</a>
-                            
+                                                        
                         </div><!-- end .blog-post -->
                         
                     </div><!-- end .span4 -->
@@ -1285,22 +1253,167 @@
                             
                             <div class="blog-post-title">
                                 
-                                <i class="ifc-musical"></i>
+                                <i class="ifc-ball_point_pen"></i>
                                 
                                 <h4>
-                                    <a href="blog-post.html">Mauris id sagittis metus at tincidunt tortor eget.</a>
+                                    <p>2nd Uganda User Group Conference</p>
                                 </h4>
                                 
-                                <p>By <a href="#">John Doe</a> in <a href="#"><strong>General Posts</strong></a></p>
+                                <p class="blog-post-dates">in<strong class="blog-post-strong"> 2019</strong></p>
                                 
+                                <i class="ifc-ball_point_pen"></i>
+
+                                <h4>
+                                    <p>AfricaGEO</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">in <strong class="blog-post-strong">2018</strong></p>
+                                
+                                <i class="ifc-ball_point_pen"></i>
+
+                                <h4>
+                                    <p>EAUC</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">in <strong class="blog-post-strong">2017 - 2006</strong></p>
+                                
+                                <i class="ifc-ball_point_pen"></i>
+
+                                <h4>
+                                    <p>Uganda Chamber of Mines & Petroleum 5th Annual Mineral Wealth Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Serena Uganda</strong> in <strong class="blog-post-strong">2016</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>Geomatics Indaba</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">South Africa</strong> in <strong class="blog-post-strong">2015</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>GIS Day</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates"> in <strong class="blog-post-strong">2015, 2011, 2009, 2003, 2001</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>MEAI Geospatial Distribution Partners Meeting</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates"> in <strong class="blog-post-strong">2014</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>East Africa International ICT Expo</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Lugogo Uganda</strong> in <strong class="blog-post-strong">2013</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>Annual WasteManagement Conference, Uganda </p>
+                                </h4>
+                                
+                                <p class="blog-post-dates"> in <strong class="blog-post-strong">2013</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>Geomatics Expo</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Entebbe Uganda</strong> in <strong class="blog-post-strong">2018</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>Uganda Land Awareness Week </p>
+                                </h4>
+                                
+                                <p class="blog-post-dates"> in <strong class="blog-post-strong">2013</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>Uganda Top 100 Mid sized Companies’ Survey</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Sheraton Uganda</strong> in <strong class="blog-post-strong">2013</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>SuperReturn Africa Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Accra</strong> in <strong class="blog-post-strong">2013</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>Optron VIP Conference and SASGI</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">South Africa</strong> in <strong class="blog-post-strong">2013</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>5th East African Petroleum Conference and Exhibition</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Serena Uganda</strong> in <strong class="blog-post-strong">2011</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>ESRI Middle East & Africa User Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Lebanon</strong> in <strong class="blog-post-strong">2011</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>5th ESRI Eastern Africa User Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Nairobi</strong> in <strong class="blog-post-strong">2010</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>ICAROS User Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Kampala Uganda</strong> in <strong class="blog-post-strong">2010</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>African Association of Remote Sensing and the Environment (AARSE) </p>
+                                </h4>
+                                
+                                <p class="blog-post-dates"> in <strong class="blog-post-strong">2010</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>3RD EAC Investment Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Kampala Uganda</strong> in <strong class="blog-post-strong">2010</strong></p>
+
                             </div><!-- end .blog-post-title -->
-                            
-                            <p>Suspendisse mollis sodales commodo. Donec eu suscipit massa, tempus fermentum sapien. Donec ipsum 
-                            tellus, rhoncus at velit efficitur, venenatis lobortis felis. In hac habitasse platea dictumst. Maecenas 
-                            sed nulla ante. Maecenas libero arcu, tempus eget blandit ultrices, facilisis elementum turpis quis 
-                            ligula sodales. </p>
-                            
-                            <a class="btn" href="blog-post.html">Read more</a>
                             
                         </div><!-- end .blog-post -->
                         
@@ -1323,117 +1436,111 @@
                             
                             <div class="blog-post-title">
                                 
-                                <i class="ifc-play"></i>
+                                <i class="ifc-ball_point_pen"></i>
                                 
                                 <h4>
-                                    <a href="blog-post.html">Duis ultricies elit et morbi ac velit eget mauris.</a>
+                                    <p>AfricaGIS</p>
                                 </h4>
                                 
-                                <p>By <a href="#">John Doe</a> in <a href="#"><strong>General Posts</strong></a></p>
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Kampala Uganda</strong> in <strong class="blog-post-strong">2009</strong></p>
                                 
+                                <i class="ifc-ball_point_pen"></i>
+
+                                <h4>
+                                    <p>GSDI - 9 Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Santiago Chile</strong> in <strong class="blog-post-strong">2006</strong></p>
+                                
+                                <i class="ifc-ball_point_pen"></i>
+
+                                <h4>
+                                    <p>UDSGI Workshops</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Makerere University Uganda</strong> in <strong class="blog-post-strong">2006</strong></p>
+                                
+                                <i class="ifc-ball_point_pen"></i>
+
+                                <h4>
+                                    <p>End to end cadastral solutions for economic development</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Nairobi-AddisAbaba</strong> in <strong class="blog-post-strong">2005</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>Survey and GIS technology update Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Kampala Uganda</strong> in <strong class="blog-post-strong">2005</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>East Africa Petroleum Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Entebbe Uganda</strong> in <strong class="blog-post-strong">2005</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>A Conference organized by ESRI Supported Kenya User Group (KUG)</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Nairobi</strong> in <strong class="blog-post-strong">2004</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>NIMES Workshop</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Jinja Uganda</strong> in <strong class="blog-post-strong">2004</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>Workshop on the role of public and private organizations in the growth of
+                                        Geoinformation market in Uganda
+                                        </p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Makerere University Uganda</strong> in <strong class="blog-post-strong">2004</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>RAFU Workshop</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates"> in <strong class="blog-post-strong">2003</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>ESRI International User Conference</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">California</strong> in <strong class="blog-post-strong">2003</strong></p>
+
+                                <i class="ifc-ball_point_pen"></i>
+                                
+                                <h4>
+                                    <p>EUMETSAT User Forum</p>
+                                </h4>
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">Kampala Uganda</strong> in <strong class="blog-post-strong">2000</strong></p>
+
                             </div><!-- end .blog-post-title -->
-                            
-                            <p>Sed cursus vulputate metus ut venenatis. Nam lobortis turpis vitae pretium fringilla. Maecenas neque 
-                            tellus, pulvinar non ante ut, posuere euismod leo. Mauris semper bibendum molestie at ultricies nibh. 
-                            Sed nisi est, venenatis et porta sed, scelerisque sit amet sapien. Maecenas finibus nisi ut leo aliquam 
-                            vitae nulla dolor amet.</p>
-                            
-                            <a class="btn" href="blog-post.html">Read more</a>
-                            
+                                                        
                         </div><!-- end .blog-post -->
                         
                     </div><!-- end .span4 -->
                 </div><!-- end .row -->
-                
-                <div class="row">
-                	<div class="span4">
-                        
-                        <div class="blog-post">
-                            
-                            <div class="blog-post-thumb">
                                 
-                                <img src="content/blog/370x275-4.png" alt="">
-                                
-                                <div class="blog-post-info">
-                                    
-                                    <h3>12<small>dec</small></h3>
-                                    
-                                </div><!-- end .blog-post-info -->
-                                
-                            </div><!-- end .blog-post-thumb -->
-                            
-                            <div class="blog-post-title">
-                                
-                                <i class="ifc-photo"></i>
-                                
-                                <h4>
-                                    <a href="blog-post.html">Etiam sed magna eget tortor pretium in dolor tortor.</a>
-                                </h4>
-                                
-                                <p>By <a href="#">John Doe</a> in <a href="#"><strong>General Posts</strong></a></p>
-                                
-                            </div><!-- end .blog-post-title -->
-                            
-                            <p>Aliquam sollicitudin nibh non iaculis tincidunt. Vivamus ac nunc nec sapien dapibus vulputate ac in 
-                            sem. Donec eu semper massa. Suspendisse pulvinar efficitur erat, sit amet consequat diam consequat at. 
-                            Maecenas posuere finibus metus sit amet aliquam. tempor ante lorem, sit amet dictum purus commodo.</p>
-                            
-                            <a class="btn" href="blog-post.html">Read more</a>
-                            
-                        </div><!-- end .blog-post -->
-                        
-                    </div><!-- end .span4 -->
-                    <div class="span4">
-                        
-                        <div class="blog-post">
-                            
-                            <div class="blog-post-thumb">
-                                
-                                <img src="content/blog/370x275-5.png" alt="">
-                                
-                                <div class="blog-post-info">
-                                    
-                                    <h3>11<small>dec</small></h3>
-                                    
-                                </div><!-- end .blog-post-info -->
-                                
-                            </div><!-- end .blog-post-thumb -->
-                            
-                            <div class="blog-post-title">
-                                
-                                <i class="ifc-fantasy"></i>
-                                
-                                <h4>
-                                    <a href="blog-post.html">Etiam justo eget ipsum ac malesuada diam luctus.</a>
-                                </h4>
-                                
-                                <p>By <a href="#">John Doe</a> in <a href="#"><strong>General Posts</strong></a></p>
-                                
-                            </div><!-- end .blog-post-title -->
-                            
-                            <p>Aenean posuere dapibus orci, a vulputate urna accumsan id. Sed vitae fermentum ligula, sollicitudin 
-                            iaculis mi. Ipsum sed dolor nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                            per inceptos himenaeos. Aliquam porttitor quam mi, nec venenatis nibh efficitur sit amet finibus ex 
-                            eget ipsum.</p>
-                            
-                            <a class="btn" href="blog-post.html">Read more</a>
-                            
-                        </div><!-- end .blog-post -->
-                        
-                    </div><!-- end .span4 -->
-                    <div class="span4">
-                    	
-                        <div class="more-blog-post">
-                        	
-                            <h3>
-                            	<a href="blog-2.html">View more posts</a>
-                            </h3>
-                            
-                        </div><!-- end .more-blog-post -->
-                        
-                    </div><!-- end .span4 -->
-                </div><!-- end .row -->
-                
             </div><!-- end #news and events -->
 
             <div class="row">
@@ -1630,16 +1737,17 @@
 		
 	</div><!-- end #wrap -->
     
-    <!-- <div class="backtotopcontainer">
+    <!-- <div class="backtotopcontainer"> -->
     <a id="back-to-top" href="#">
-    	<!-- <i class="ifc-up4"></i> -->
-        <img class="ifc-up4" src="assets/images/back_to_top.png">
-        <div class="ifc-up4 centered">^</div>
+    	<i class="ifc-up4"></i>
+        <!-- <img class="ifc-up4" src="assets/images/back_to_top.png">
+        <div class="ifc-up4 centered">^</div> -->
     </a>
-    </div> -->
+    <!-- </div> -->
 
     <!-- /// jQuery ////////  -->
 	<script src="assets/vendors/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- /// ViewPort ////////  -->
 	<script src="assets/vendors/viewport/jquery.viewport.js"></script>
