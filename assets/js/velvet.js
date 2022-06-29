@@ -78,25 +78,6 @@
 // 	window.confettiful = new Confettiful(document.querySelector('.js-container'));
 
 /* ==========================================================================
-   navbar changing colors in sections
-   ========================================================================== */
-
-	// var top1 = $('#products').offset().top;
-	// var top2 = $('#projects').offset().top;
-	// var top3 = $('#news_events').offset().top;
-
-	// $(document).scroll(function() {
-	// var scrollPos = $(document).scrollTop();
-	// if (scrollPos >= top1 && scrollPos < top2) {
-	// 	$('#header').css('background-color', '#000000');
-	// } else if (scrollPos >= top2 && scrollPos < top3) {
-	// 	$('#header').css('background-color', '#ffffff');
-	// } else if (scrollPos >= top3) {
-	// 	$('#header').css('background-color', '#000000');
-	// }
-	// });
-
-/* ==========================================================================
    setDimensionsPieCharts
    ========================================================================== */
 	
