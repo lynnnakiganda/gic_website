@@ -407,6 +407,47 @@
 		animation: confetti-fast 1.25s linear 1 forwards;
 	}
 
+	.modal-close {
+		background: #000;
+		margin: 57px 12px 107px;
+		font-size: x-large;
+	  }
+	  
+	  .modal-background {
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100vw;
+		height: 100vh;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		position: fixed;
+		margin: 0;
+		display: none;
+	  }
+	  
+	  .modal-background .modal {
+		position: fixed;
+		width: 59vw;
+		height: 33vw;
+		top: 161px;
+		right: 20vw;
+		-webkit-box-shadow: 10px 50px 30px rgba(0, 0, 0, 0.2);
+				box-shadow: 10px 50px 30px rgba(0, 0, 0, 0.2);
+		-webkit-transition: -webkit-transform 1s;
+		transition: -webkit-transform 1s;
+		transition: transform 1s;
+		transition: transform 1s, -webkit-transform 1s;
+	  }
+	   
+	  .modal-background .modal-close {
+		position: absolute;
+		content: '';
+		color: white;
+		z-index: 1;
+		right: 0px;
+		top: -46px;
+	  }
+	  
 /* ==========================================================================
    =Typography - Images
    ========================================================================== */
