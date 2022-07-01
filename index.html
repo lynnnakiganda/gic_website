@@ -110,9 +110,11 @@
 		<div id="content">
 		
 		<!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-            <video autoplay muted loop style="width: 100%; position: fixed;">
-                <source src="content/slider/Globe - 5925.mp4" type="video/mp4">
-            </video>    
+        <div class="video_container">
+            <video class="video_pdts" id="vid" autoplay muted loop style="width: 100%;">
+            <source src="content/slider/Globe - 5925.mp4" type="video/mp4">
+            </video>
+       </div>
 
             <!-- <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
@@ -367,7 +369,7 @@
             <div id="services" style="background: white; position: relative;">
             	
                 <div class="row" style="margin-top: 24px;">
-                	<div class="span12 text-center">
+                	<div class="span12 text-center services_head">
                     	
                         <div class="headline">
                         	
@@ -434,7 +436,7 @@
             <div id="training" style="background: white; position: relative;">
             	
                 <div class="row" style="margin-top: -1px;">
-                	<div class="span12 text-center" style="margin-top: 147px;">
+                	<div class="span12 text-center training_head" style="margin-top: 147px;">
                     	
                         <div class="headline">
                         	
@@ -543,9 +545,9 @@
             <div id="projects" style="background: white; position: relative;">
             	
                 <div class="row">
-                    <div class="span12 text-center">
+                    <div class="span12 text-center projects_head">
                         
-                        <div class="headline" style="margin: 158px 0 3px 0;">
+                        <div class="headline" style="margin: 158px 0 23px 0;">
                             
                             <h2>Projects</h2>
                             
@@ -554,7 +556,7 @@
                     </div><!-- end .span12 -->
                 </div><!-- end .row -->
 
-                <div class="fullwidth-section" id="bg-2" style="background-image: linear-gradient(to right, rgb(255 255 255), rgb(255 255 255 / 0%)), linear-gradient(to bottom, rgb(0 0 0), rgb(255 255 255 / 0%));">
+                <div class="fullwidth-section" id="bg-2" style="background-image: linear-gradient(to right, rgb(0 0 0), rgb(255 255 255 / 0%)), linear-gradient(to bottom, rgb(255 248 248), rgb(255 255 255 / 0%));">
                 	
                     <div class="fullwidth-section-content">
                     	
@@ -1833,7 +1835,8 @@
 	
 	<!-- /// Custom JS ////////  -->
 	<script src="assets/js/velvet.js"></script>
-    
+    <!-- <script src="assets/js/gic.js"></script> -->
+
     
 </body>
 </html>
