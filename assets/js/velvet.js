@@ -19,108 +19,6 @@
 	}
 
 /* ==========================================================================
-   modal
-   ========================================================================== */
-
-//    $(document).ready(function(){
-
-
-// 	$('.button-modal').on('click', function(){
-// 		$('#'+$(this).data('modal')).css('display','block');
-// 	})
-
-
-// 	$('button.modal-close').on('click', function(){
-// 		$('.modal').css('display','none');
-// 	})
-
-
-// 	$(window).on('click', function(event){
-// 		if (jQuery.inArray( event.target, $('.modal') ) != "-1") {
-//         	$('.modal').css('display','none');
-//     	}
-// 	})
-
-
-
-// })
-
-// // Get the modal
-// var modal = document.getElementsByClassName('modal');
-
-// // Get the button that opens the modal
-// var btn = document.getElementsByClassName("button-modal");
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("modal-close")[0];
-
-// // When the user clicks the button, open the modal 
-// btn.onclick = function() {
-//     modal.style.display = "block";
-// }
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//     modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
-
-
-// $(document).ready(function(){
-
-
-// 	$('.button-modal').on('click', function(){
-// 		$('#'+$(this).data('modal')).css('display','block');
-// 	})
-
-
-// 	$('span.modal-close').on('click', function(){
-// 		$('.modal').css('display','none');
-// 	})
-
-
-// 	$(window).on('click', function(event){
-// 		if (jQuery.inArray( event.target, $('.modal') ) != "-1") {
-//         	$('.modal').css('display','none');
-//     	}
-// 	})
-
-// })
-
-	// (function(){
-
-	// 	document.querySelector(".button-modal").onclick = function() {openModal()};
-	// 		function openModal() {
-	// 			var mymodal = document.querySelector('.modal-background');
-	// 			mymodal.style.display = 'block';
-	// 		};
-
-	// 	document.querySelector(".modal-close").onclick = function() {closeModal()};
-	// 	function closeModal() {
-	// 		var mymodal = document.querySelector('.modal-background');
-	// 		mymodal.style.display = 'none';
-	// 	};
-	
-	// }());
-	
-// 	const nodeList = document.querySelectorAll(".example");
-// for (let i = 0; i < nodeList.length; i++) {
-//   nodeList[i].style.backgroundColor = "red";
-// }
-
-// modal 
-
-	// $(window).load(function(){        
-	// 	$('#myModal').modal('show');
-	// 	}); 
-
-		/* ==========================================================================
    confettidiv
    ========================================================================== */
 
@@ -1031,7 +929,68 @@
 		handlePageLoader();
 		
 	});
+
+	//events modal load
+	// $(".modal-fullscreen").on('show.bs.modal', function () {
+	// 	setTimeout( function() {
+	// 	  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+	// 	},0);
+	//   });
+	//   $(".modal-fullscreen").on('hidden.bs.modal', function () {
+	// 	$(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+	//   });
+	  
+	//   setTimeout(function() {
+	// 	  $('#fsModal').modal('show');
+	//   }, 10000);
+
+/* ==========================================================================
+   modal
+   ========================================================================== */
+
+	// Get the modal
+	var modal = document.getElementById("modal-background");
+
+	// Get the button that opens the modal
+	var btn = document.getElementsByClassName("button-modal");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("modal-close")[0];
+
+	// When the user clicks the button, open the modal
+	btn[0].onclick = function() {
+	modal.style.display = "block";
+	};
+
+	btn[1].onclick = function() {
+	modal.style.display = "block";
+	};
 	
+	btn[2].onclick = function() {
+	modal.style.display = "block";
+	};
+
+	btn[3].onclick = function() {
+	modal.style.display = "block";
+	};
+		
+	btn[4].onclick = function() {
+	modal.style.display = "block";
+	};
+			
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	modal.style.display = "none";
+	};
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+	};
+
+
 
 })(window.jQuery);
 // non jQuery scripts below

@@ -184,9 +184,7 @@
 		display: block; 
 		margin-bottom: 20px; 
 	}
-	
-	blockquote {}
-	
+		
 	blockquote p { font-style: italic; }
 	
 	blockquote span { 
@@ -329,9 +327,7 @@
 		margin-bottom: 0; 
 		margin-left: 30px; 
 	}
-	
-	li {}
-	
+		
 	ul { list-style-type: disc; }
 	ol { list-style-type: decimal; }
 	
@@ -413,7 +409,7 @@
 		font-size: x-large;
 	  }
 	  
-	  .modal-background {
+	  #modal-background {
 		background-color: rgba(0, 0, 0, 0.5);
 		width: 100vw;
 		height: 100vh;
@@ -425,7 +421,7 @@
 		display: none;
 	  }
 	  
-	  .modal-background .modal {
+	  #modal-background .modal {
 		position: fixed;
 		width: 59vw;
 		height: 33vw;
@@ -439,7 +435,7 @@
 		transition: transform 1s, -webkit-transform 1s;
 	  }
 	   
-	  .modal-background .modal-close {
+	  #modal-background .modal-close {
 		position: absolute;
 		content: '';
 		color: white;
@@ -448,6 +444,77 @@
 		top: -46px;
 	  }
 	  
+	  h1.blog_custom {
+		font-size: 2em !important;
+	}
+	
+	button.custom_2 {
+		font-size:1em !important;
+	}
+	
+	/* .modal-fullscreen */
+	.modal-fullscreen {
+	  background: transparent;
+	  text-align:center;
+	}
+	.modal-fullscreen .modal-content {
+	  background: transparent;
+	  border: 0;
+	  -webkit-box-shadow: none;
+	  box-shadow: none;
+	  text-align:center;
+	  color:#FFF;
+	  padding-top:100px;
+	  
+	}
+	.modal-backdrop.modal-backdrop-fullscreen {
+	  background: #336699;
+	}
+	.modal-backdrop.modal-backdrop-fullscreen.in {
+	  opacity: .97;
+	  filter: alpha(opacity=97);
+	}
+	
+	/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+	
+	.modal-fullscreen .modal-dialog {
+	  margin: 0;
+	  margin-right: auto;
+	  margin-left: auto;
+	  width: 100%;
+	}
+	
+	.modal-header > h1 {
+		color: #FFF !important;
+		font-size: 2em !important;	
+	} 
+	
+	.modal-header > .form {
+		padding-top: 50px;	
+	}
+	
+	@media (min-width: 768px) {
+	  .modal-fullscreen .modal-dialog {
+		width: 750px;
+	  }  
+	  .modal-header > h1 {
+		font-size: 4em !important;	
+	  }
+	  h1.blog_custom {
+		font-size: 5em !important;
+	  }
+	}
+	@media (min-width: 992px) {
+	  .modal-fullscreen .modal-dialog {
+		width: 970px;
+	  }
+	}
+	@media (min-width: 1200px) {
+	  .modal-fullscreen .modal-dialog {
+		 width: 1170px;
+	  }
+	}
+
 /* ==========================================================================
    =Typography - Images
    ========================================================================== */
@@ -507,12 +574,6 @@
 /* ==========================================================================
    =Typography - Forms
    ========================================================================== */
-
-	form {}
-	
-	fieldset {}
-	
-	form p {}
 	
 	label {
 		display: block;
@@ -1078,13 +1139,7 @@
 		position: relative;
 		background-color: #fff;
 	}
-	
-	@media (max-width: 767px) {
-
-		#wrap {}
-
-	}
-   
+	   
 /* ==========================================================================
    =Header 
    ========================================================================== */
@@ -1275,8 +1330,6 @@
 		border: 1px solid rgba(0, 0, 0, 0.1);	
 		background-color: #171717;			
 	}
-
-	.sf-menu > li.dropdown > ul {}	
 		
 /* =Mega Menu Section
    ========================================================================== */
@@ -1642,9 +1695,7 @@
 	#footer h4,
 	#footer h5,
 	#footer h6 { color: #fff; }
-	
-	#footer-widget-area-1 {}	
-	
+		
 	#footer .ewf_widget_social_media { text-align: center; }
 	
 	#footer .ewf_widget_social_media a.social-icon { 	
@@ -1672,9 +1723,7 @@
    ========================================================================== */	
   
 	#footer-bottom { padding: 35px 0; }
-	
-	#footer-bottom-widget-area-1 {}
-	
+		
 	#footer-bottom .widget:last-child { margin-bottom: 0; }
 	
 	#footer-bottom .widget_text h4 {
@@ -1687,46 +1736,37 @@
    =Back to top
    ========================================================================== */
 
-	  #back-to-top {
-		position: fixed;
-		z-index: 1;
-		right: -40px;
-		bottom: 96px;
-		width: 40px;
-		height: 40px;
-		/* background-color: #0e0e0e; */
-		color: #fafafa;
-		font-size: 30px;
-		text-align: center;					
-		/* opacity: 0.5; */
-		cursor: pointer;
-		text-decoration: none;
-		-webkit-transition: all 0.4s;
-				transition: all 0.4s;
-	}
+   #back-to-top {
+	position: fixed;
+	z-index: 1010;
+	right: -40px;
+	bottom: 20px;
+	width: 40px;
+	height: 40px;
+	background-color: #0e0e0e;
+	color: #fafafa;
+	font-size: 30px;
+	text-align: center;					
+	opacity: 0.5;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-transition: all 0.4s;
+			transition: all 0.4s;
+}
 
-	#back-to-top p {
-		bottom: 67px;
-		position: relative;
-		color: #eb7d26;
-		font-size: 20px;
-		left: 71px;
-	}
+#back-to-top i {
+	font-size: 28px;
+	line-height: 40px;
+	font-weight: normal;
+	vertical-align: top;
+	-webkit-transition: all 0.4s;
+			transition: all 0.4s;
+}
 
-	#back-to-top:hover {
-		animation: tilt-n-move-shaking 0.25s infinite;
-	}
-
-	#back-to-top p:hover {
-		color: rgba(0, 0, 0, 0.7);;
-	}
-
-	#back-to-top.visible { right: 88px; }
-	#back-to-top.gone { right: -40px; }
-
-	.up_img{
-		max-width: 176px;
-	}
+#back-to-top:hover { background-color: rgba(0, 0, 0, 0.7); }
+#back-to-top:hover i { color: #fff; }
+#back-to-top.visible { right: 40px; }
+#back-to-top.gone { right: -40px; }	
 
 /* ==========================================================================
    =Services
@@ -1927,9 +1967,7 @@
 		margin: 40px auto 0 auto;
 		content: "";
 	}
-	
-	.main-slider-slide__content h2 {}
-	
+		
 	.main-slider-slide__content p {
 		color: #fff;
 		font-size: 18px;
@@ -2431,7 +2469,6 @@
 	 * 1. needed so that Google Maps controls are not distorted
 	 */
 	 
-	.google-map {}
 	.google-map  img { max-width: none; }	/* 1 */
 	
 	.map { 
@@ -2570,9 +2607,7 @@
 	}
 	
 	.icon-box-2 .btn { margin-top: 10px; }
-	
-	.icon-box-2 .icon-box-content {}	
-	
+		
 	.icon-box-2:hover > i {
 		border-color: #c88b5e;
 		color: #c88b5e;
@@ -3118,8 +3153,6 @@
     *  1. Wraps around a horizontal tab group
 	*/
    
-	.tabs-container {} /* 1 */
-
 	.tabs-container .tabs-menu { 
 		margin-top: 10px; 
 		margin-bottom: 0;
@@ -3529,13 +3562,7 @@
 	}
 	
 	.portfolio-columns .item .portfolio-item { margin-bottom: 0; }
-	
-	@media (min-width: 1400px) {
-			
-		.portfolio-columns .item {}
 		
-	}
-	
 	@media (min-width: 768px) and (max-width: 979px) {
 		
 		.portfolio-columns .item { 
@@ -3676,9 +3703,7 @@
 		overflow: hidden; 
 		margin-bottom: 50px; 
 	}
-	
-	#contact-form fieldset {}
-	
+		
 	#contact-form label.validation-error { 
 		position: relative;
 		top: 0;
@@ -3689,9 +3714,7 @@
 	input.validation-error,
 	textarea.validation-error,
 	select.validation-error { border: 1px solid #e0e0e0; }
-	
-	#contact-form #formstatus {}
-		
+			
 	#contact-form textarea,
 	#contact-form input[type="text"] {
 		border-width: 0 0 2px 0;
@@ -3787,9 +3810,7 @@
 		line-height: 14px;
 		text-transform: uppercase;
 	}
-	
-	.blog-post-readmore {}
-	
+		
 	.blog-post:hover .blog-post-info { background-color: rgba(23, 23, 23, 0.5); }
 	
 	.blog-post:hover .blog-post-info h3 {
@@ -3985,7 +4006,7 @@
 	#bg-4 {
 		padding-top: 110px;
 		padding-bottom: 0;
-		background-image: url(../../content/backgrounds/1920x1280-2.jpg);
+		background-image: url(../../content/backgrounds/milestones_background.jpg);
 	}
 	
 	#bg-5 { background-color: #f7f7f7; }
@@ -4009,21 +4030,7 @@
    ========================================================================== */
    
     .ewf-inline-style { display: none; }
-	
-	.wp-caption {}
-	
-	.wp-caption-text {}
-	
-	.sticky {}
-	
-	.gallery-caption {}
-	
-	.alignright  {}
-	
-	.alignleft  {}
-	
-	.aligncenter  {}
-	
+		
 	.alignnone { margin: 5px 20px 20px 0; }
 
 	.aligncenter,
@@ -4113,19 +4120,10 @@
 		line-height: 24px;
 		text-transform: uppercase; 
 	}
-	
-/* =Text Widget
-   ========================================================================== */
-	
-	.widget_text {}
-	
-	.textwidget {}
-	
+			
 /* =Search Widget
    ========================================================================== */
-	
-	.widget_search {}
-	
+		
 	#searchform { position: relative }
 	
 	.screen-reader-text { display: none; }
@@ -4149,25 +4147,17 @@
 
 /* =Recent Entries Widget
    ========================================================================== */
-	
-	.widget_recent_entries {}
-	
+		
 	.widget_recent_entries ul {
 		margin-bottom: 0;
 		list-style: none; 
 	}
 	
-	.widget_recent_entries ul li {}
-	
-	.widget_recent_entries ul li a {}
-	
 	.widget_recent_entries ul li img {
 		float: left;
 		margin-right: 15px;
 	}
-	
-	.widget_recent_entries ul li .post-date {}
-	
+		
 	@media (min-width: 768px) and (max-width: 979px) {
 			
 		.widget_recent_entries ul li img { display: none; }
@@ -4176,16 +4166,12 @@
 	
 /* =Pages Widget
    ========================================================================== */
-	
-	.widget_pages {}
-	
+		
 	.widget_pages ul {
 		margin-bottom: 0;
 		list-style: none; 
 	}
-	
-	.widget_pages ul li {} 
-	
+		
 	.widget_pages li a {
 		display: block;
 		padding-bottom: 12px;
@@ -4210,16 +4196,12 @@
 	
 /* =Archive Widget
    ========================================================================== */
-	
-	.widget_archive {}
-	
+		
 	.widget_archive ul {
 		margin-bottom: 0;
 		list-style: none; 
 	}
-	
-	.widget_archive ul li {} 
-	
+		
 	.widget_archive li a {
 		display: block;
 		padding-bottom: 12px;
@@ -4243,21 +4225,15 @@
 	}
 	
 	.widget_archive select { text-transform: uppercase; }
-	
-	.widget_archive option {}	
-	
+		
 /* =Categories Widget
    ========================================================================== */
-	
-	.widget_categories {}
-	
+		
 	.widget_categories ul {
 		margin-bottom: 0;
 		list-style: none; 
 	}
-	
-	.widget_categories ul li {} 
-	
+		
 	.widget_categories li a {
 		display: block;
 		padding-bottom: 12px;
@@ -4279,37 +4255,17 @@
 		color: #c88b5e;
 		text-decoration: none;
 	}
-	
-	.widget_categories ul ul.children {}
-	
+		
 	.widget_categories select { text-transform: uppercase; }
-	
-	.widget_categories select#cat {}
-	
-	.widget_categories select.postform {}
-	
-	.widget_categories option {}
-	
-	.widget_categories .level-0 {}
-	
-	.widget_categories .level-1 {}
-	
-	.widget_categories .level-2 {}
-	
-	.widget_categories .level-3 {}
-	
+		
 /* =Meta Widget
    ========================================================================== */
-	
-	.widget_meta {}
-	
+		
 	.widget_meta ul {
 		margin-bottom: 0;
 		list-style: none; 
 	}
-	
-	.widget_meta ul li {} 
-	
+		
 	.widget_meta li a {
 		display: block;
 		padding-bottom: 12px;
@@ -4331,25 +4287,10 @@
 		color: #c88b5e;
 		text-decoration: none;
 	}
-	
-/* =Recent Comments Widget
-   ========================================================================== */
-	
-	.widget_recent_comments {}
-	
-	#recentcomments { list-style: none; }
-	
-	#recentcomments li {}
-	
-	#recentcomments li a {}
-	
-	.recentcomments {}
-	
+		
 /* =Tag Cloud Widget
    ========================================================================== */
-	
-	.widget_tag_cloud {}
-	
+		
 	.widget_tag_cloud a { 
 		display: inline-block; 
 		padding: 5px 10px; 
@@ -4367,46 +4308,15 @@
 		border-color: #c88b5e;
 		color: #c88b5e;
 	}
-	
-/* =Calendar Widget
-   ========================================================================== */
-	
-	.widget_calendar {}
-	
-	#calendar_wrap {}
-	
-	#calendar_wrap th {}
-	
-	#calendar_wrap td {}
-	
-	#wp-calendar tr td {}
-	
-	#wp-calendar caption {}
-	
-	#wp-calendar a {}
-	
-	#wp-calendar #today {}
-	
-	#wp-calendar #prev {}
-	
-	#wp-calendar #next {}
-	
-	#wp-calendar #next a {}
-	
-	#wp-calendar #prev a {}
-	
+		
 /* =Nav Menu Widget
    ========================================================================== */
-	
-	.widget_nav_menu {}	
-	
+		
 	.widget_nav_menu ul {
 		margin-bottom: 0;
 		list-style: none; 
 	}
-	
-	.widget_nav_menu ul li {} 
-	
+		
 	.widget_nav_menu li a {
 		display: block;
 		padding-bottom: 12px;
@@ -4431,9 +4341,7 @@
 	
 /* =RSS Widget
    ========================================================================== */
-	
-	.widget_rss {}
-	
+		
 	.widget_rss ul {
 		margin-bottom: 0;
 		list-style: none; 
@@ -4445,9 +4353,7 @@
    
 /* =EWF Twitter widget
    ========================================================================== */
-	
-	.ewf_widget_latest_tweets{}
-	
+		
 	.ewf-tweet-list .tweet { word-wrap: break-word; }
 	
 	.ewf-tweet-list ul {
@@ -4465,11 +4371,7 @@
 	
 /* =EWF Flickr widget
    ========================================================================== */
-	
-	.ewf_widget_flickr {}
-	
-	.flickr-feed {}
-	
+		
 	.flickr-feed .flickr_badge_image { display: inline; }
 	
 	.flickr-feed img { 
@@ -4481,9 +4383,7 @@
 	
 /* =EWF Contact Info widget
    ========================================================================== */	
-	
-	.ewf_widget_contact_info {}
-	
+		
 	.ewf_widget_contact_info ul {
 		margin-bottom: 0;
 		list-style: none;
@@ -4502,13 +4402,9 @@
 		top: 7px;
 		left: 0;
 	}
-	
-	.ewf_widget_contact_info ul li a {  }
-	
+		
 /* =EWF Newsletter subscribe widget
    ========================================================================== */
-
-	.ewf_widget_newsletter {}
 	
 	#newsletter-subscribe-form { position: relative; }
 	
@@ -4538,8 +4434,6 @@
 
 /* =EWF Latest posts widget
    ========================================================================== */
-
-	.ewf_widget_latest_posts {}
 	
 	.ewf_widget_latest_posts ul { 
 		margin-bottom: 0;
@@ -4579,16 +4473,12 @@
 	
 /* =EWF Navigation widget
    ========================================================================== */
-	
-	.ewf_widget_navigation {}
-	
+		
 	.ewf_widget_navigation ul {
 		margin-bottom: 0;
 		list-style: none; 
 	}
-	
-	.ewf_widget_navigation ul li {} 
-	
+		
 	.ewf_widget_navigation li a {
 		display: block;
 		padding-bottom: 12px;
@@ -4613,9 +4503,7 @@
 
 /* =EWF Social media widget
    ========================================================================== */
-	
-	.ewf_widget_social_media {}
-	
+		
 	/*
 	 * 1. Clearfix hack 
 	 */
@@ -4631,9 +4519,7 @@
 	
 /* =EWF Custom Box widget
    ========================================================================== */
-   	
-	.ewf_custom_box_widget {}
-	
+   		
 	.ewf_custom_box_widget .widget-title + .custom-box-item { margin-top: 60px; }
 	
 	.custom-box-item {
@@ -4667,11 +4553,7 @@
    	.comments-area { margin-top: 100px; }
    
 	.comments-title { text-transform: uppercase; }
-	
-	.comment-reply-title {}
-	
-	.commentlist .reply {}
-	
+		
 	.commentlist .reply a {
 		display: inline-block; 
 		padding: 8px 12px; 
@@ -4693,29 +4575,7 @@
 		border-color: #c88b5e;
 		color: #c88b5e;
 	}
-	
-	.commentlist .alt {}
-	
-	.commentlist .odd {}
-	
-	.commentlist .even {}
-	
-	.commentlist .thread-alt {}
-	
-	.commentlist .thread-odd {}
-	
-	.commentlist .thread-even {}
-	
-	.commentlist li ul.children .alt {}
-	
-	.commentlist li ul.children .odd {}
-	
-	.commentlist li ul.children .even {}
-	
-	.commentlist .vcard {}
-	
-	.commentlist .vcard cite.fn {}
-	
+		
 	.commentlist .vcard span.says { display: none; }
 	
 	.commentlist .vcard img.photo {
@@ -4723,9 +4583,7 @@
 		display: block;
 		margin-right: 30px;
 	}
-	
-	.commentlist .vcard img.avatar {}
-	
+		
 	.commentlist .vcard cite.fn a.url {
 		color: #4b4b4b;
 		font: 16px "Oswald", Arial, sans-serif;
@@ -4735,32 +4593,12 @@
 	.commentlist .comment-meta { margin-bottom: 15px; }
 	
 	.commentlist .comment-meta a { font-size: 16px; }
-	
-	.commentlist .commentmetadata {}
-	
-	.commentlist .commentmetadata a {}
-	
-	.commentlist .parent {}
-	
-	.commentlist .comment {}
-	
-	.commentlist .children {}
-	
-	.commentlist .pingback {}
-	
-	.commentlist .bypostauthor {}
-	
-	.commentlist .comment-author {}
-	
-	.commentlist .comment-author-admin {}
-	
+		
 	.commentlist {
 		margin-bottom: 70px;
 		list-style: none; 
 	}
-	
-	.commentlist li {}
-	
+		
 	.commentlist li .comment-body { margin-top: 70px; }
 	
 	.commentlist li p { margin-left: 110px; }
@@ -4769,23 +4607,7 @@
 		margin-left: 110px;
 		list-style: none; 
 	}
-	
-	.commentlist li ul.children li {}
-	
-	.commentlist li ul.children li.alt {}
-	
-	.commentlist li ul.children li.byuser {}
-	
-	.commentlist li ul.children li.comment {}
-	
-	.commentlist li ul.children li.bypostauthor {}
-	
-	.commentlist li ul.children li.comment-author-admin {}
-	
-	#cancel-comment-reply {}
-	
-	#cancel-comment-reply a {}
-	
+		
 	@media (max-width: 767px) {
 		
 		
@@ -4829,43 +4651,25 @@
 		left: 0;
 		font-size: 22px;
 	}
-	
-	.comment-form-author {}
-	
-	.comment-form-author label {}
-	
+		
 	.comment-form-author input#author {
 		padding-left: 30px;
 		border: none;
 		border-bottom: 2px solid #4b4b4b;
 	}
-	
-	.comment-form-email {}
-	
-	.comment-form-email label {}
-	
+		
 	.comment-form-email input#email {
 		padding-left: 30px;
 		border: none;
 		border-bottom: 2px solid #4b4b4b;
 	}
-	
-	.comment-form-url {}
-	
-	.comment-form-url label {}
-	
+		
 	.comment-form-url input#url {
 		padding-left: 30px;
 		border: none;
 		border-bottom: 2px solid #4b4b4b;
 	}
-	
-	#commentform .required {}
-	
-	.comment-form-comment {}
-	
-	.comment-form-comment label {}
-	
+		
 	.comment-form-comment textarea#comment {
 		padding-left: 30px;
 		border: none;
@@ -4873,10 +4677,4 @@
 	}
 	
 	.form-allowed-tags { display: none; }
-	
-	.form-allowed-tags code {}
-	
-	.form-submit {}
-	
-	#commentform #submit {}
-		
+			
