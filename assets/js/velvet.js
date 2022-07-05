@@ -17,65 +17,40 @@
 	function isTouchDevice() {
 		return !!('ontouchstart' in window) || ( !! ('onmsgesturechange' in window) && !! window.navigator.maxTouchPoints);
 	}
-
+	
 /* ==========================================================================
-   confettidiv
-   ========================================================================== */
+confettidiv
+========================================================================== */
 
-//    'use strict';
+	var confettiPlayers = [];
 
-// 	var Confettiful = function Confettiful(el) {
-// 	this.el = el;
-// 	this.containerEl = null;
+	function makeItConfetti() {
+	var confetti = document.querySelectorAll('.confetti');
+	
+	if (!confetti[0].animate) {
+		return false;
+	}
 
-// 	this.confettiFrequency = 3;
-// 	this.confettiColors = ['#fce18a', '#ff726d', '#b48def', '#f4306d'];
-// 	this.confettiAnimations = ['slow', 'medium', 'fast'];
+	for (var i = 0, len = confetti.length; i < len; ++i) {
+		var snowball = confetti[i];
+		snowball.innerHTML = '<div class="rotate"><div class="askew"></div></div>';
+		var scale = Math.random() * .8 + .2;
+		var player = snowball.animate([
+		{ transform: 'translate3d(' + (i/len*100) + 'vw,0,0) scale(' + scale + ')', opacity: scale },
+		{ transform: 'translate3d(' + (i/len*100 + 10) + 'vw,100vh,0) scale(' + scale + ')', opacity: 1 }
+		], {
+		duration: Math.random() * 3000 + 3000,
+		iterations: Infinity,
+		delay: -(Math.random() * 5000)
+		});
+		
+		
+		confettiPlayers.push(player);
+	}
+	}
 
-// 	this._setupElements();
-// 	this._renderConfetti();
-// 	};
+	makeItConfetti();
 
-// 	Confettiful.prototype._setupElements = function () {
-// 	var containerEl = document.createElement('div');
-// 	var elPosition = this.el.style.position;
-
-// 	if (elPosition !== 'absolute' || elPosition !== 'absolute') {
-// 		this.el.style.position = 'absolute';
-// 	}
-
-// 	containerEl.classList.add('confetti-container');
-
-// 	this.el.appendChild(containerEl);
-
-// 	this.containerEl = containerEl;
-// 	};
-
-// 	Confettiful.prototype._renderConfetti = function () {
-// 	var _this = this;
-
-// 	this.confettiInterval = setInterval(function () {
-// 		var confettiEl = document.createElement('div');
-// 		var confettiSize = Math.floor(Math.random() * 3) + 7 + 'px';
-// 		var confettiBackground = _this.confettiColors[Math.floor(Math.random() * _this.confettiColors.length)];
-// 		var confettiLeft = Math.floor(Math.random() * _this.el.offsetWidth) + 'px';
-// 		var confettiAnimation = _this.confettiAnimations[Math.floor(Math.random() * _this.confettiAnimations.length)];
-
-// 		confettiEl.classList.add('confetti', 'confetti--animation-' + confettiAnimation);
-// 		confettiEl.style.left = confettiLeft;
-// 		confettiEl.style.width = confettiSize;
-// 		confettiEl.style.height = confettiSize;
-// 		confettiEl.style.backgroundColor = confettiBackground;
-
-// 		confettiEl.removeTimeout = setTimeout(function () {
-// 		confettiEl.parentNode.removeChild(confettiEl);
-// 		}, 3000);
-
-// 		_this.containerEl.appendChild(confettiEl);
-// 	}, 25);
-// 	};
-
-// 	window.confettiful = new Confettiful(document.querySelector('.js-container'));
 
 /* ==========================================================================
    setDimensionsPieCharts
@@ -930,67 +905,85 @@
 		
 	});
 
-	//events modal load
-	// $(".modal-fullscreen").on('show.bs.modal', function () {
-	// 	setTimeout( function() {
-	// 	  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-	// 	},0);
-	//   });
-	//   $(".modal-fullscreen").on('hidden.bs.modal', function () {
-	// 	$(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-	//   });
-	  
-	//   setTimeout(function() {
-	// 	  $('#fsModal').modal('show');
-	//   }, 10000);
-
 /* ==========================================================================
-   modal
+    events modal
    ========================================================================== */
 
-	// Get the modal
-	var modal = document.getElementById("modal-background");
-
-	// Get the button that opens the modal
-	var btn = document.getElementsByClassName("button-modal");
-
-	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("modal-close")[0];
-
-	// When the user clicks the button, open the modal
-	btn[0].onclick = function() {
-	modal.style.display = "block";
-	};
-
-	btn[1].onclick = function() {
-	modal.style.display = "block";
-	};
-	
-	btn[2].onclick = function() {
-	modal.style.display = "block";
-	};
-
-	btn[3].onclick = function() {
-	modal.style.display = "block";
-	};
-		
-	btn[4].onclick = function() {
-	modal.style.display = "block";
-	};
-			
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-	modal.style.display = "none";
-	};
-
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-	if (event.target == modal) {
-		modal.style.display = "none";
-	}
-	};
-
-
+   $ (window).ready (function () {
+	setTimeout (function () {
+		$ ('#events-modal').modal ("show")
+	}, 10000)
+   })
+  
 
 })(window.jQuery);
 // non jQuery scripts below
+
+/* ==========================================================================
+    events modal close
+   ========================================================================== */
+
+	// Get the modal
+	var eventsmodal = document.getElementById("events-modal");
+
+    // Get the <span> element that closes the modal
+    var eventsspan = document.getElementsByClassName("events-modal-close")[0];
+            
+    // When the user clicks on <span> (x), close the modal
+    eventsspan.onclick = function() {
+    eventsmodal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == eventsmodal) {
+        eventsmodal.style.display = "none";
+    }
+    };
+
+/* ==========================================================================
+    email modal
+   ========================================================================== */
+
+    // Get the modal
+    var modal = document.getElementById("modal-background");
+
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("button-modal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("modal-close")[0];
+
+    // When the user clicks the button, open the modal
+    btn[0].onclick = function() {
+    modal.style.display = "block";
+    };
+
+    btn[1].onclick = function() {
+    modal.style.display = "block";
+    };
+    
+    btn[2].onclick = function() {
+    modal.style.display = "block";
+    };
+
+    btn[3].onclick = function() {
+    modal.style.display = "block";
+    };
+        
+    btn[4].onclick = function() {
+    modal.style.display = "block";
+    };
+            
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    };
+
