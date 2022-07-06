@@ -296,14 +296,13 @@
         
         <div class="video_container">
             <video class="video_pdts" id="vid" autoplay muted loop style="width: 100%;">
-                <script> document.getElementById('vid').play();</script>
                 <source src="content/slider/Globe - 5925.mp4" type="video/mp4">
             </video>
         </div>
 
 			<div class="main-slider">
 
-                <ul class="main-slider__slides" data-slick='{ "fade": true, "speed": 750, "autoplay": false, "infinite": true, "dots": true, "arrows": false }'>
+                <ul class="main-slider__slides" data-slick='{ "fade": true, "speed": 5000, "autoplay": true, "infinite": true, "dots": true, "arrows": false }'>
                     <li>
 						<div class="main-slider-slide__content 
 									main-slider-slide__content--valign-middle 
@@ -476,8 +475,10 @@
                                     <a href="#">AutoDesk Software</a>
                                 </h3>
                                 
-                                <p>Praesent consequat congue ligula, nec luctus mauris scelerisque vel. Donec mattis gravida est, id malesuada 
-                                orci. In quis felis ut risus sodales condimentum non fringilla orci.</p>
+                                <p>Autodesk is a global leader in design and make technology. With expertise 
+                                    across architecture, engineering, construction, design, manufacturing, 
+                                    and entertainment, we help innovators everywhere solve today’s pressing 
+                                    challenges.</p>
                                 
                                 <a class="btn" target="_blank" href="autodesk_products.html">read more </a>
                             
@@ -650,13 +651,15 @@
                             <div class="icon-box-content">
                             
                                 <h3>
-                                    <a href="#">AutoCAD Training</a>
+                                    <a href="#">AutoDesk Training</a>
                                 </h3>
                                 
-                                <p>Praesent consequat congue ligula, nec luctus mauris scelerisque vel. Donec mattis gravida est, id malesuada 
-                                orci. In quis felis ut risus sodales condimentum non fringilla orci.</p>
-                                
-                                <a class="btn" href="#">read more </a>
+                                <p>Whether you are a novice, expert, student, or professional, we have a 
+                                    training path for you. Your learning and training options range from 
+                                    free tips and tricks, videos, and self-service courses to paid 
+                                    services from GIC, an authorized AutoDesk Learning Partners.
+                                </p>                                
+                                <a class="btn" target="_blank" href="autodesk_training.html">read more </a>
                             
                             </div><!-- end .icon-box-content -->
                             
@@ -2053,7 +2056,7 @@
     $ (window).ready (function () {
         setTimeout (function () {
             $ ('#events-modal').modal ("show")
-        }, 15000)
+        }, 20000)
     })
 
     /* ==========================================================================
