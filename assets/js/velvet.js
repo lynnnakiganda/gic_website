@@ -19,40 +19,6 @@
 	}
 	
 /* ==========================================================================
-confettidiv
-========================================================================== */
-
-	var confettiPlayers = [];
-
-	function makeItConfetti() {
-	var confetti = document.querySelectorAll('.confetti');
-	
-	if (!confetti[0].animate) {
-		return false;
-	}
-
-	for (var i = 0, len = confetti.length; i < len; ++i) {
-		var snowball = confetti[i];
-		snowball.innerHTML = '<div class="rotate"><div class="askew"></div></div>';
-		var scale = Math.random() * .8 + .2;
-		var player = snowball.animate([
-		{ transform: 'translate3d(' + (i/len*100) + 'vw,0,0) scale(' + scale + ')', opacity: scale },
-		{ transform: 'translate3d(' + (i/len*100 + 10) + 'vw,100vh,0) scale(' + scale + ')', opacity: 1 }
-		], {
-		duration: Math.random() * 3000 + 3000,
-		iterations: Infinity,
-		delay: -(Math.random() * 5000)
-		});
-		
-		
-		confettiPlayers.push(player);
-	}
-	}
-
-	makeItConfetti();
-
-
-/* ==========================================================================
    setDimensionsPieCharts
    ========================================================================== */
 	
@@ -238,7 +204,7 @@ confettidiv
 			
 			$("#mobile-menu").hide();
 			$("#mobile-menu-trigger").removeClass("mobile-menu-opened").addClass("mobile-menu-closed");
-		
+
 		} else {
 			
 			if (!exists("#mobile-menu")) {
@@ -905,85 +871,6 @@ confettidiv
 		
 	});
 
-/* ==========================================================================
-    events modal
-   ========================================================================== */
-
-   $ (window).ready (function () {
-	setTimeout (function () {
-		$ ('#events-modal').modal ("show")
-	}, 10000)
-   })
-  
-
 })(window.jQuery);
 // non jQuery scripts below
-
-/* ==========================================================================
-    events modal close
-   ========================================================================== */
-
-	// Get the modal
-	var eventsmodal = document.getElementById("events-modal");
-
-    // Get the <span> element that closes the modal
-    var eventsspan = document.getElementsByClassName("events-modal-close")[0];
-            
-    // When the user clicks on <span> (x), close the modal
-    eventsspan.onclick = function() {
-    eventsmodal.style.display = "none";
-    };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-    if (event.target == eventsmodal) {
-        eventsmodal.style.display = "none";
-    }
-    };
-
-/* ==========================================================================
-    email modal
-   ========================================================================== */
-
-    // Get the modal
-    var modal = document.getElementById("modal-background");
-
-    // Get the button that opens the modal
-    var btn = document.getElementsByClassName("button-modal");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("modal-close")[0];
-
-    // When the user clicks the button, open the modal
-    btn[0].onclick = function() {
-    modal.style.display = "block";
-    };
-
-    btn[1].onclick = function() {
-    modal.style.display = "block";
-    };
-    
-    btn[2].onclick = function() {
-    modal.style.display = "block";
-    };
-
-    btn[3].onclick = function() {
-    modal.style.display = "block";
-    };
-        
-    btn[4].onclick = function() {
-    modal.style.display = "block";
-    };
-            
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-    modal.style.display = "none";
-    };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    };
 
