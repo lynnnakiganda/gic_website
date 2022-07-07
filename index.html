@@ -5,11 +5,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TS2D3NB92H"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-TS2D3NB92H');
+        gtag('config', 'G-TS2D3NB92H');
     </script>
 
 	<meta charset="utf-8">
@@ -23,19 +23,15 @@
     <!-- /// Favicons ////////  -->
     <link rel="shortcut icon" href="favicon.png">
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
-
-	<!-- /// Google Fonts ////////  -->
-    <link defer rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap">
-    <link defer rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,300,700&display=swap">
     
     <!-- /// FontAwesome Icons 4.2.0 ////////  -->
-	<link defer rel="stylesheet" href="assets/fonts/fontawesome/font-awesome.min.css">
+	<link async defer rel="stylesheet" href="assets/fonts/fontawesome/font-awesome.min.css">
     
     <!-- /// Custom Icon Font ////////  -->
-    <link defer rel="stylesheet" href="assets/fonts/iconfontcustom/icon-font-custom.css">  
+    <link async defer rel="stylesheet" href="assets/fonts/iconfontcustom/icon-font-custom.css">  
     
 	<!-- /// Template CSS ////////  -->
-    <link defer rel="stylesheet" href="assets/css/velvet.css">
+    <link async defer rel="stylesheet" href="assets/css/velvet.css">
     
 	<!-- /// JS Plugins CSS ////////  -->
 	<link rel="stylesheet" href="assets/vendors/slick/slick.css">
@@ -51,7 +47,7 @@
 	<div id="page-loader">
 		<div class="loader-img">
 			
-			<img src="assets/images/loader.gif" alt=""> 
+			<img src="assets/images/loader.gif" alt="" loading="lazy"> 
 		
 		</div><!-- end .loader-img -->
 	</div><!-- end .pageloader -->
@@ -117,6 +113,13 @@
 		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 		</div><!-- end #header -->
+
+        <div class="video_container">
+            <video class="video_pdts" id="vid" playsinline autoplay muted loop style="width: 100%;">
+                <source src="content/slider/Globe - 5925.mp4" type="video/mp4">
+            </video>
+        </div>
+
 		<div id="content">
 		
 		<!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -228,7 +231,7 @@
                                         
                                         <div class="blog-post-thumb">
                                             
-                                            <img src="content/blog/upcoming_events.jpg" alt="">
+                                            <img src="content/blog/upcoming_events.jpg" alt="" loading="lazy" >
                                             
                                             <div class="blog-post-info">
                                                 
@@ -271,7 +274,7 @@
                                         
                                         <div class="blog-post-thumb">
                                             
-                                            <img style="height: 45vh;" src="content/blog/news.webp" alt="">
+                                            <img style="height: 45vh;" src="content/blog/news.webp" alt="" loading="lazy" >
                                             
                                             <div class="blog-post-info">
                                                 
@@ -304,15 +307,9 @@
                 </div>
             </div>
         
-        <div class="video_container">
-            <video class="video_pdts" id="vid" playsinline autoplay muted loop style="width: 100%;">
-                <source src="content/slider/Globe - 5925.mp4" type="video/mp4">
-            </video>
-        </div>
-
 			<div class="main-slider">
 
-                <ul class="main-slider__slides" data-slick='{ "fade": true, "speed": 5000, "autoplay": true, "infinite": true, "dots": true, "arrows": false }'>
+                <ul class="main-slider__slides" data-slick='{ "autoplaySpeed": 2500, "fade": true, "speed": 500, "autoplay": true, "infinite": true, "dots": true, "arrows": false }'>
                     <li>
 						<div class="main-slider-slide__content 
 									main-slider-slide__content--valign-middle 
@@ -797,7 +794,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/tilting.webp" alt="">
+                                <img src="content/portfolio/tilting.webp" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -831,7 +828,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/wildlife.jpg" alt="">
+                                <img src="content/portfolio/wildlife.jpg" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -867,7 +864,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/electricity (2).jpg" alt="">
+                                <img src="content/portfolio/electricity (2).jpg" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -901,7 +898,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/construction.webp" alt="">
+                                <img src="content/portfolio/construction.webp" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -929,7 +926,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/electricity (3).jpg" alt="">
+                                <img src="content/portfolio/electricity (3).jpg" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -963,7 +960,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/farming.jpg" alt="">
+                                <img src="content/portfolio/farming.jpg" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -997,7 +994,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/electricity.jpg" alt="">
+                                <img src="content/portfolio/electricity.jpg" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1025,7 +1022,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/child.jpg" alt="">
+                                <img src="content/portfolio/child.jpg" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1053,7 +1050,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/water.jpg" alt="">
+                                <img src="content/portfolio/water.jpg" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1087,7 +1084,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/justice.jpg" alt="">
+                                <img src="content/portfolio/justice.jpg" alt=""loading="lazy"  >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1121,7 +1118,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/bank.webp" alt="">
+                                <img src="content/portfolio/bank.webp" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1151,7 +1148,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/nature.jpg" alt="">
+                                <img src="content/portfolio/nature.jpg" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1185,7 +1182,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/disease.webp" alt="">
+                                <img src="content/portfolio/disease.webp" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1213,7 +1210,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/police.jpg" alt="">
+                                <img src="content/portfolio/police.jpg" alt=""loading="lazy"  >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1242,7 +1239,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/kcca.jpg" alt="">
+                                <img src="content/portfolio/kcca.jpg" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1276,7 +1273,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/roads.webp" alt="">
+                                <img src="content/portfolio/roads.webp" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1312,7 +1309,7 @@
                     
                             <div class="portfolio-item-preview">
                                 
-                                <img src="content/portfolio/environment.webp" alt="">
+                                <img src="content/portfolio/environment.webp" alt="" loading="lazy" >
                                 
                                 <div class="portfolio-item-overlay">
                                     
@@ -1376,7 +1373,7 @@
                             
                             <div class="blog-post-thumb">
                                 
-                                <img src="content/blog/upcoming_events.jpg" alt="">
+                                <img src="content/blog/upcoming_events.jpg" alt="" loading="lazy" >
                                 
                                 <div class="blog-post-info">
                                     
@@ -1468,7 +1465,7 @@
                             
                             <div class="blog-post-thumb">
                                 
-                                <img style="height: 193px;" src="content/blog/training.jpg" alt="">
+                                <img style="height: 193px;" src="content/blog/training.jpg" alt="" loading="lazy">
                                 
                                 <div class="blog-post-info">
                                     
@@ -1651,7 +1648,7 @@
                             
                             <div class="blog-post-thumb">
                                 
-                                <img style="height: 193px;" src="content/blog/training2.webp" alt="">
+                                <img style="height: 193px;" src="content/blog/training2.webp" alt="" loading="lazy" >
                                 
                                 <div class="blog-post-info">
                                     
@@ -1777,7 +1774,7 @@
                         <div class="span6">
                             <h4>Twitter Feed</h4>
                             <!-- https://publish.twitter.com/ -->
-                            <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/gic_ug?lang=en"></a> <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/gic_ug?lang=en"></a>
                             <!-- <a data-width="500" data-height="500" href="https://twitter.com/intent/tweet?screen_name=GIC_Ug&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @GIC_Ug</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
                         </div>
 
@@ -1994,9 +1991,7 @@
     <script src='https://widgets.sociablekit.com/youtube-channel-videos/widget.js' async defer></script>
 
     <!-- /// jQuery ////////  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="assets/vendors/jquery-2.1.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- /// ViewPort ////////  -->
@@ -2051,6 +2046,9 @@
 	<!-- /// Custom JS ////////  -->
 	<script src="assets/js/velvet.js"></script>
     
+	<!-- /// twitter ////////  -->
+    <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
     <script>
     
     function mobilemenuclose() {
