@@ -1497,7 +1497,7 @@
 	
 		@media (max-width: 1161px) {
 			.video_pdts{
-				position: absolute ;
+				position: static ;
 			}
 		 }
 	
