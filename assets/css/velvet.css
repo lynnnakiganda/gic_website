@@ -590,6 +590,7 @@
 	img { 
 		aspect-ratio: attr(width) / attr(height);
 		border: none; 
+		max-width: 100%;
 	}
 	
 	/* Images Helper Classes */
@@ -639,6 +640,21 @@
 	
 	table thead th { vertical-align: bottom; }
 	
+	.youtube_frame{
+		position: static;
+		visibility: visible;
+		display: inline-block;
+		width: 500px;
+		height: 500px;
+		padding: 0px;
+		border: none;
+		max-width: 100%;
+		min-width: 180px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		min-height: 200px;
+	}
+
 /* ==========================================================================
    =Typography - Forms
    ========================================================================== */
