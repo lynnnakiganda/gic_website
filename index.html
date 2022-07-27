@@ -65,7 +65,7 @@
 					<!-- // Logo // -->
 					
 					<a href="index.html" id="logo">
-                    	<img class="responsive-img" src="assets/images/gic_logo.webp" alt="">
+                    	<img class="responsive-img" src="assets/images/gic_logo_animate.gif" alt="" loading="lazy">
                     </a>
 				
 				</div><!-- end .span3 -->
@@ -85,15 +85,303 @@
 							<li>
 								<a onclick="mobilemenuclose()" href="about.html" target="_blank"><span>About</span></a>
 							</li>                            
-							<li>                        	
-								<a onclick="mobilemenuclose()" href="#products"><span>Products</span></a>                                                        
+							<li class="dropdown">                        	
+								<a onclick="mobilemenuclose()" href="#products"><span>Products</span></a>
+                                <ul>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 100px;" src="content/backgrounds/esri_products.png">
+                                            <a style="float: right;" href="#products">Esri Software</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_pro.png">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Pro</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_enterprise.png">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Enterprise</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_online.png">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Online</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_apps.png">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Apps</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_platform.png">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Platform</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 100px;" src="content/backgrounds/autodesk_products.png">
+                                            <a style="float: right;" href="#products">AutoDesk Software</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/autocad.png">
+                                                <a style="float: right; text-transform: none;" href="autodesk_products.html">AutoCAD</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/autocad_arch.png">
+                                                <a style="float: right; text-transform: none;" href="autodesk_products.html">AutoCAD Architecture</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/autocad_civil.png">
+                                                <a style="float: right; text-transform: none;" href="autodesk_products.html">AutoCAD Civil 3D</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/autocad_mech.png">
+                                                <a style="float: right; text-transform: none;" href="autodesk_products.html">AutoCAD Electrical</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 64px; margin-left: 19px;" src="content/backgrounds/trimble_products.png">
+                                            <a style="float: right;" href="#products">Optron/Trimble <br>Software</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-business-centre.png">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Trimble Business Centre</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-path-finder.png">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Trimble GPS Path finder</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-access.png">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Trimble Access</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/Trimble-Terraflex.png">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Trimble Terraflex</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 40px;" src="content/backgrounds/TerraSync.jpg">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">TerraSync</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-total-station.png">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Total Station</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/GNSS-image.jpg">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">GNSS</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/Trimble-Data-Collectors.png">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Data Collectors</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/cors-station-gic.jpg">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">CORS Station</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 102px;" src="content/backgrounds/hardware_products.png">
+                                            <a style="float: right;" href="#products">Hardware Products</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/digital_level.jpg">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">Digital Levels</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/GNSS-image.jpg">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">GNSS Surveying Systems</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-total-station.png">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">Total Stations</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/Trimble-Data-Collectors.png">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html"> Handheld GPS Receivers</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 88px; margin-left: -20px;" src="content/backgrounds/hardware_products.png">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">Unmanned Aircraft <br>Systems(Drones)</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/TerraSync.jpg">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">Accessories</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                </ul>                                                        
 							</li>                            			
-							<li>
-								<a onclick="mobilemenuclose()" href="#services"><span>Services</span></a>                                                   
-							</li>
-                            <li>
-								<a onclick="mobilemenuclose()" href="#training"><span>Training</span></a>  
-                            </li>
+							<li class="dropdown">                        	
+								<a onclick="mobilemenuclose()" href="#services"><span>Services</span></a>
+                                <ul>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 74px;" src="content/backgrounds/mapping_services.png">
+                                            <a style="float: right;" href="#services">Mapping</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 35px;" src="content/backgrounds/trimble_products.png">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">Land Surveying services</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 100px; margin-left: -19px;" src="content/backgrounds/gis_training.png">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">Aerial mapping </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/cors-station-gic.jpg">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">CORS services</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/Trimble-Data-Collectors.png">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">Mobile mapping</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 89px; margin-left: -19px;" src="content/backgrounds/map_printing.png">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">Map printing and design</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 82px;" src="content/backgrounds/consulting_services.png">
+                                            <a style="float: right;" href="#services">Consultancy</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/baseline-survey.png">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Baseline survey</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/needs-assessment.png">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Needs assessment</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/infra-dev.png">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Infrastructure development </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/image-proc.png">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Satellite image processing</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/app-dev.png">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Application development</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                </ul>                                                        
+							</li>                            			
+                            <li class="dropdown">                        	
+								<a onclick="mobilemenuclose()" href="#training"><span>Training</span></a>
+                                <ul>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 74px;" src="content/backgrounds/gis_training.png">
+                                            <a style="float: right;" href="#training">GIS Training</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">GIS Fundamentals</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Foundation of ArcGIS Desktop </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Data and Map Production</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Spatial Analysis</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Enterprise GIS</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Multi-user Geodatabases</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">GIS Specialized courses</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 74px;" src="content/backgrounds/sensing_training.png">
+                                            <a style="float: right;" href="#training">Remote Sensing <br>Training</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Introduction to Remote Sensing</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Surface modelling</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Image classification methods  </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Hydrological modeling (Watershed delineation) </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Vegetation Analysis</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 82px;" src="content/backgrounds/autodesk_training.png">
+                                            <a style="float: right;" href="#training">AutoDesk Training</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="autodesk_training.html">AutoCAD, Revit and Inventor Essentials</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="autodesk_training.html">BIM with Revit</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="autodesk_training.html">Mechanical part and assembly design and analysis with inventor</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="autodesk_training.html">Student Internships</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 82px;" src="content/backgrounds/equipment_training.webp">
+                                            <a style="float: right;" href="#training">Survey Equipment <br>Training</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Digital Levels Training </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">GNSS Surveying Systems Training</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Total Stations Training  </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Handheld GPS Receivers Training </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Unmanned Aircraft Systems(Drones) Training</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Accessories Training</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                </ul>                                                        
+							</li>                            			
                             <li>
 								<a onclick="mobilemenuclose()" href="#projects"><span>Projects</span></a>  
                             </li>                                                
@@ -114,100 +402,11 @@
 
 		</div><!-- end #header -->
 
-        <div class="video_container">
-            <video class="video_pdts" id="vid" playsinline autoplay muted loop style="width: 100%;">
-                <source src="content/slider/Globe - 5925.mp4" type="video/mp4">
-            </video>
-        </div>
-
 		<div id="content">
 		
 		<!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <!-- Events Modal -->
             <div id="events-modal" class="fade-in-image">
-
-                <div class="confetti-land">
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                    <div class="confetti"></div>
-                </div>
 
                     <div class="eventmodal">
                         <button class="events-modal-close">Close X</button>
@@ -301,11 +500,21 @@
                                             <i class="ifc-jingle_bell"></i>
                                             
                                             <h4>
-                                                <p>Internship Training</p>
+                                                <p>Student Internships and Training</p>
                                             </h4>
                                             
-                                            <p class="blog-post-dates">At <strong class="blog-post-strong">Kampala Uganda</strong> in <strong class="blog-post-strong">2009</strong></p>
-                                                                                    
+                                            <p class="blog-post-dates">At <strong class="blog-post-strong">GIC</strong> Bi-weekly <strong class="blog-post-strong">starting 1st August 2022</strong></p>
+                                            
+                                            <p style="color: #4b4b4b; text-transform: none;">
+                                                GIC offers project based instruction and placements with our various
+                                                and qualified team of proffessionals, to students interested in learning
+                                                and mastering the AutoDesk world and applying it to their everyday
+                                                life or future projects to come.
+                                            </p>
+                                            <p>
+                                                <a class="btn button-modal" target="_blank" href="https://forms.gle/qKNwu4KNy35HDyJm7">REGISTER</a>
+                                            </p>
+                                    
                                         </div><!-- end .blog-post-title -->
                                                                     
                                     </div><!-- end .blog-post -->
@@ -319,10 +528,14 @@
                 </div>
             </div>
         
+            <div class="video_container">
+                <img class="video_pdts" src="content/backgrounds/gic_start_dark.jpg" style="width: 100%;">
+            </div>
+
 			<div class="main-slider">
 
-                <ul class="main-slider__slides" data-slick='{ "autoplaySpeed": 2500, "fade": true, "speed": 500, "autoplay": true, "infinite": true, "dots": true, "arrows": false }'>
-                    <li>
+                <ul class="main-slider__slides" data-slick='{ "fade": true, "speed": 800, "autoplay": true, "infinite": true, "dots": true, "arrows": false }'>
+                    <li style="background-image:url('content/backgrounds/gic_start_dark.jpg');">
 						<div class="main-slider-slide__content 
 									main-slider-slide__content--valign-middle 
 									main-slider-slide__content--align-center"> 
@@ -358,7 +571,7 @@
 						</div><!-- end .main-slider-slide__content -->	
 						
 					</li>
-					<li>
+                    <li style="background-image:url('content/backgrounds/surveying1_dark.jpg');">
 					
 						<div class="main-slider-slide__content 
 									main-slider-slide__content--valign-middle 
@@ -367,7 +580,7 @@
 							<div class="main-slider-slide__content-wrap">  		
 									
 								<h1 >
-									Introducing ArcGis Platform and Drone in precision mapping
+									Surveying and Geospatial Tools and Software 
 								</h1>
                                 <p  style="display: inline-block; font-size: 13px;">
                                     <i class="ifc-geo_fence"></i>
@@ -382,7 +595,7 @@
                                     + (256) 786-604-457
 								</p>
                                 <div data-animation="fadeInDown" data-delay="1.5s">
-                                    <a class="btn btn-large" href="#contact">Contact Us</a>
+                                    <a class="btn btn-large" href="#products">Read More</a>
                                 </div>
 
 							</div><!-- end .main-slider-slide__content-wrap -->
@@ -390,7 +603,71 @@
 						</div><!-- end .main-slider-slide__content -->	
 						
                         </li>
-                        <li>
+                        <li style="background-image:url('content/backgrounds/surveying2_dark.jpg');">
+					
+						<div class="main-slider-slide__content 
+									main-slider-slide__content--valign-middle 
+									main-slider-slide__content--align-center"> 
+	
+							<div class="main-slider-slide__content-wrap">  		
+									
+								<h1 >
+									Surveying and Geospatial Tools and Software 
+								</h1>
+                                <p  style="display: inline-block; font-size: 13px;">
+                                    <i class="ifc-geo_fence"></i>
+                                    8th Street Industrial Area, Kampala
+                                </p> 
+                                <p  style="display: inline-block; font-size: 13px;"> 
+                                    <i class="ifc-message"></i>
+                                    <a href="mailto:info@gic.co.ug">info@gic.co.ug</a>
+                                </p>
+                                <p  style="display: inline-block; font-size: 13px;">    
+                                    <i class="ifc-phone1"></i>
+                                    + (256) 786-604-457
+								</p>
+                                <div data-animation="fadeInDown" data-delay="1.5s">
+                                    <a class="btn btn-large" href="#products">Read More</a>
+                                </div>
+
+							</div><!-- end .main-slider-slide__content-wrap -->
+							
+						</div><!-- end .main-slider-slide__content -->	
+						
+                        </li>
+                        <li style="background-image:url('content/backgrounds/drones_dark.jpg');">
+					
+						<div class="main-slider-slide__content 
+									main-slider-slide__content--valign-middle 
+									main-slider-slide__content--align-center"> 
+	
+							<div class="main-slider-slide__content-wrap">  		
+									
+								<h1 >
+									Drone Mapping 
+								</h1>
+                                <p  style="display: inline-block; font-size: 13px;">
+                                    <i class="ifc-geo_fence"></i>
+                                    8th Street Industrial Area, Kampala
+                                </p> 
+                                <p  style="display: inline-block; font-size: 13px;"> 
+                                    <i class="ifc-message"></i>
+                                    <a href="mailto:info@gic.co.ug">info@gic.co.ug</a>
+                                </p>
+                                <p  style="display: inline-block; font-size: 13px;">    
+                                    <i class="ifc-phone1"></i>
+                                    + (256) 786-604-457
+								</p>
+                                <div data-animation="fadeInDown" data-delay="1.5s">
+                                    <a class="btn btn-large" href="#products">Read More</a>
+                                </div>
+
+							</div><!-- end .main-slider-slide__content-wrap -->
+							
+						</div><!-- end .main-slider-slide__content -->	
+						
+                        </li>
+                        <li style="background-image:url('content/backgrounds/training_dark.jpg');">
 					
                                 <div class="main-slider-slide__content 
                                             main-slider-slide__content--valign-middle 
@@ -402,11 +679,7 @@
                                             Training
                                         </h1>
                                         <p data-animation="fadeInDown" data-delay="1s">
-                                            GIC offers foundational courses that are designed to support 
-                                            professionals with diverse GIS experience and workplace 
-                                            responsibilities. Each course emphasizes the best practices and 
-                                            recommended workflows that will prepare learners to be highly 
-                                            productive and get the results they need from the ArcGIS platform.
+                                            GIS, AutoDesk and Remote Sensing Training and Internships
                                         </p>
                                         <p  style="display: inline-block; font-size: 13px;">
                                             <i class="ifc-geo_fence"></i>
@@ -438,8 +711,8 @@
 			   </div><!-- end .main-slider -->
             
             </div>
-                
-            <div style="background: white; margin-top: 50px; position: relative;" id="products">
+                    
+            <div style="background: white; margin-top: -146px; position: relative;" id="products">
 
                 <div class="row">
                 	<div style="margin-top: 145px;" class="span12 text-center">
@@ -459,15 +732,15 @@
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-mind_map"></i>
-                                <!-- <img style="width: 103px;" src="assets/images/esri_icon.png"> -->
+                                <!-- <i class="ifc-mind_map"></i> -->
+                                <img style="width: 100px;" src="content/backgrounds/esri_products.png">
                             </span>
       
                             <div class="icon-box-content">
                             
                                 <h3>
                                     <a href="#">Esri Software</a>
-                                </h3><br><br>
+                                </h3>
                                 
                                 <p>Esri builds the leading mapping and spatial analytics software designed 
                                     to support the mission and business objectives of organizations around 
@@ -484,35 +757,8 @@
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-increase_font"></i>
-                                <!-- <img style="width: 103px;" src="assets/images/autodesk_icon.png"> -->
-                            </span>
-      
-                            <div class="icon-box-content">
-                            
-                                <h3>
-                                    <a href="#">AutoDesk Software</a>
-                                </h3>
-                                
-                                <p>Autodesk is a global leader in design and make technology. With expertise 
-                                    across architecture, engineering, construction, design, manufacturing, 
-                                    and entertainment, we help innovators everywhere solve today’s pressing 
-                                    challenges.</p>
-                                
-                                <a class="btn" target="_blank" href="autodesk_products.html">read more </a>
-                            
-                            </div><!-- end .icon-box-content -->
-                            
-                        </div><!-- end .icon-box-1 -->
-                        
-                    </div><!-- end .span6 -->
-                    <div class="span6">
-                
-                		<div class="icon-box-1">
-                            
-                            <span>
-                                <i class="ifc-register_editor"></i>
-                                <!-- <img style="width: 92px;" src="assets/images/trimble_icon.png"> -->
+                                <!-- <i class="ifc-register_editor"></i> -->
+                                <img style="width: 96px;" src="content/backgrounds/trimble_products.png">
                             </span>
       
                             <div class="icon-box-content">
@@ -534,10 +780,38 @@
                             
                         </div><!-- end .icon-box-1 -->                                                
                         
+                    </div><!-- end .span6 -->
+                    <div class="span6">
+                
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-workstation"></i>
+                                <!-- <i class="ifc-increase_font"></i> -->
+                                <img style="width: 96px;" src="content/backgrounds/autodesk_products.png">
+                            </span>
+      
+                            <div class="icon-box-content">
+                            
+                                <h3>
+                                    <a href="#">AutoDesk Software</a>
+                                </h3>
+                                
+                                <p>Autodesk is a global leader in design and make technology. With expertise 
+                                    across architecture, engineering, construction, design, manufacturing, 
+                                    and entertainment, we help innovators everywhere solve today’s pressing 
+                                    challenges.</p><br><br>
+                                
+                                <a class="btn" target="_blank" href="autodesk_products.html">read more </a>
+                            
+                            </div><!-- end .icon-box-content -->
+                            
+                        </div><!-- end .icon-box-1 -->
+                        
+                        <div class="icon-box-1">
+                            
+                            <span>
+                                <!-- <i class="ifc-workstation"></i> -->
+                                <img style="width: 98px;" src="content/backgrounds/hardware_products.png">
                             </span>
       
                             <div class="icon-box-content">
@@ -580,13 +854,14 @@
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-waypoint_map"></i>
+                                <!-- <i class="ifc-waypoint_map"></i> -->
+                                <img style="width: 98px;" src="content/backgrounds/mapping_services.png">
                             </span>
       
                             <div class="icon-box-content">
                             
                                 <h3>
-                                    <a href="#">Surveying and Mapping</a>
+                                    <a href="#">Mapping</a>
                                 </h3>
                                 
                                 <p>Suspendisse elementum at tortor at laoreet. Vestibulum in lectus sit amet ligula consequat malesuada. 
@@ -604,7 +879,8 @@
                 		<div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-workflow"></i>
+                                <!-- <i class="ifc-workflow"></i> -->
+                                <img style="width: 98px;" src="content/backgrounds/consulting_services.png">
                             </span>
       
                             <div class="icon-box-content">
@@ -647,13 +923,14 @@
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-radar_plot"></i>
+                                <!-- <i class="ifc-radar_plot"></i> -->
+                                <img style="width: 98px;" src="content/backgrounds/gis_training.png">
                             </span>
       
                             <div class="icon-box-content">
                             
                                 <h3>
-                                    <a href="#">GIS Training</a>
+                                    <a href="#">GIS Training</a><br><br>
                                 </h3>
                                 
                                 <p>Suspendisse elementum at tortor at laoreet. Vestibulum in lectus sit amet ligula consequat malesuada. 
@@ -668,7 +945,8 @@
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-plugin"></i>
+                                <!-- <i class="ifc-plugin"></i> -->
+                                <img style="width: 98px;" src="content/backgrounds/autodesk_training.png">
                             </span>
       
                             <div class="icon-box-content">
@@ -694,7 +972,8 @@
                 		<div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-outgoing_data"></i>
+                                <!-- <i class="ifc-outgoing_data"></i> -->
+                                <img style="width: 98px;" src="content/backgrounds/sensing_training.png">
                             </span>
       
                             <div class="icon-box-content">
@@ -715,7 +994,8 @@
                         <div class="icon-box-1">
                             
                             <span>
-                                <i class="ifc-vector"></i>
+                                <!-- <i class="ifc-vector"></i> -->
+                                <img style="width: 98px;" src="content/backgrounds/equipment_training.webp">
                             </span>
       
                             <div class="icon-box-content">
@@ -1467,11 +1747,19 @@
                                 <i class="ifc-ball_point_pen"></i>
                                 
                                 <h4>
-                                    <p>Intern Training</p>
+                                    <p>Student Internships and Training</p>
                                 </h4>
-
+                                
+                                <p class="blog-post-dates">At <strong class="blog-post-strong">GIC</strong> Bi-weekly <strong class="blog-post-strong">starting 1st August 2022</strong></p>
+                                
                                 <p style="color: #4b4b4b; text-transform: none;">
-                                    In faucibus sem tellus, sed consectetur nisi viverra ullamcorper. Donec quis ornare sapien eget dolor.
+                                    GIC offers project based instruction and placements with our various
+                                    and qualified team of proffessionals, to students interested in learning
+                                    and mastering the AutoDesk world and applying it to their everyday
+                                    life or future projects to come.
+                                </p>
+                                <p>
+                                    <a class="btn button-modal" target="_blank" href="https://forms.gle/qKNwu4KNy35HDyJm7">REGISTER</a>
                                 </p>
 
                             </div><!-- end .blog-post-title -->
@@ -1806,7 +2094,7 @@
 
                 </div>
             </div><!-- end #news and events -->
-
+   
             <div id="contact">
             	
                 <div class="row">
@@ -2103,39 +2391,6 @@
         eventsmodal.style.display = "none";
     }
     };
-
-    /* ==========================================================================
-    confettidiv
-    ========================================================================== */
-
-    var confettiPlayers = [];
-
-    function makeItConfetti() {
-    var confetti = document.querySelectorAll('.confetti');
-
-    if (!confetti[0].animate) {
-        return false;
-    }
-
-    for (var i = 0, len = confetti.length; i < len; ++i) {
-        var snowball = confetti[i];
-        snowball.innerHTML = '<div class="rotate"><div class="askew"></div></div>';
-        var scale = Math.random() * .8 + .2;
-        var player = snowball.animate([
-        { transform: 'translate3d(' + (i/len*100) + 'vw,0,0) scale(' + scale + ')', opacity: scale },
-        { transform: 'translate3d(' + (i/len*100 + 10) + 'vw,100vh,0) scale(' + scale + ')', opacity: 1 }
-        ], {
-        duration: Math.random() * 3000 + 3000,
-        iterations: Infinity,
-        delay: -(Math.random() * 5000)
-        });
-        
-        
-        confettiPlayers.push(player);
-    }
-    }
-
-    makeItConfetti();
 
     //cookies
 
