@@ -981,10 +981,18 @@
    ========================================================================== */
 
 	.responsive-img { 
-		max-width: 70%; 
+		max-width: 65%; 
 		height: auto; 
 	}
 	
+	@media (max-width: 767px) {
+
+	.responsive-img { 
+		max-width: 35%; 
+		height: auto; 
+	}
+
+	}
 	/**
  	 * 1. 16/9 ratio
  	 */
@@ -1208,7 +1216,7 @@
 		position: absolute;
 		z-index: 1025; /* 1 */
 		top: 100%;
-		left: 0;
+		right: 0;
 		display: none;
 	}
 	
@@ -1297,7 +1305,7 @@
  	 */
 	
 	.sf-menu li.dropdown ul {
-		min-width: 180px; /* 1 */
+		min-width: 372px; /* 1 */
 		padding: 20px 0 20px 30px;
 		border: 1px solid rgba(0, 0, 0, 0.1);	
 		background-color: white;			
@@ -1514,6 +1522,7 @@
 		line-height: 50px;
 		text-align: center;
 		cursor: pointer;
+		display: none;
 	}
 	
 	#mobile-menu .mobile-menu-submenu-arrow:hover { background-color: #c88b5e; }
