@@ -85,23 +85,315 @@
 							<li>
 								<a onclick="mobilemenuclose()" href="about.html" target="_blank"><span>About</span></a>
 							</li>                            
-							<li>                        	
-								<a onclick="mobilemenuclose()" href="index.html#products"><span style="border: 2px solid #eb7d26; border-radius: 18px;">Products</span></a>                                                        
+							<li class="dropdown">                        	
+								<a onclick="mobilemenuclose()" href="#products"><span style="border: 2px solid #eb7d26; border-radius: 18px;">Products</span></a>
+                                <ul>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 100px;" src="content/backgrounds/esri_products.webp">
+                                            <a style="float: right;" href="#products">Esri Software</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_pro.webp">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Pro</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_enterprise.webp">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Enterprise</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_online.webp">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Online</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_apps.webp">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Apps</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/arcgis_platform.webp">
+                                                <a style="float: right; text-transform: none;" href="esri_products.html">ArcGIS Platform</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 100px;" src="content/backgrounds/autodesk_products.webp">
+                                            <a style="float: right;" href="#products">AutoDesk Software</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/autocad.webp">
+                                                <a style="float: right; text-transform: none;" href="autodesk_products.html">AutoCAD</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/autocad_arch.webp">
+                                                <a style="float: right; text-transform: none;" href="autodesk_products.html">AutoCAD Architecture</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/autocad_civil.webp">
+                                                <a style="float: right; text-transform: none;" href="autodesk_products.html">AutoCAD Civil 3D</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/autocad_mech.webp">
+                                                <a style="float: right; text-transform: none;" href="autodesk_products.html">AutoCAD Electrical</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 64px; margin-left: 19px;" src="content/backgrounds/trimble_products.webp">
+                                            <a style="float: right;" href="#products">Optron/Trimble <br>Software</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-business-centre.webp">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Trimble Business Centre</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-path-finder.webp">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Trimble GPS Path finder</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-access.webp">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Trimble Access</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/Trimble-Terraflex.webp">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Trimble Terraflex</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 40px;" src="content/backgrounds/TerraSync.webp">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">TerraSync</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-total-station.webp">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Total Station</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/GNSS-image.webp">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">GNSS</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/Trimble-Data-Collectors.webp">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">Data Collectors</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/cors-station-gic.webp">
+                                                <a style="float: right; text-transform: none;" href="optron_trimble_products.html">CORS Station</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 102px;" src="content/backgrounds/hardware_products.webp">
+                                            <a style="float: right;" href="#products">Hardware Products</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/digital_level.webp">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">Digital Levels</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/GNSS-image.webp">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">GNSS Surveying Systems</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/trimble-total-station.webp">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">Total Stations</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/Trimble-Data-Collectors.webp">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html"> Handheld GPS Receivers</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 88px; margin-left: -20px;" src="content/backgrounds/hardware_products.webp">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">Unmanned Aircraft <br>Systems(Drones)</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/TerraSync.webp">
+                                                <a style="float: right; text-transform: none;" href="hardware_products.html">Accessories</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                </ul>                                                        
 							</li>                            			
-							<li>
-								<a onclick="mobilemenuclose()" href="index.html#services"><span>Services</span></a>                                                   
-							</li>
+							<li class="dropdown">                        	
+								<a onclick="mobilemenuclose()" href="#services"><span>Services</span></a>
+                                <ul>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 74px;" src="content/backgrounds/mapping_services.webp">
+                                            <a style="float: right;" href="#services">Mapping</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 35px;" src="content/backgrounds/trimble_products.webp">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">Land Surveying services</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 100px; margin-left: -19px;" src="content/backgrounds/gis_training.webp">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">Aerial mapping </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/cors-station-gic.webp">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">CORS services</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/Trimble-Data-Collectors.webp">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">Mobile mapping</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 89px; margin-left: -19px;" src="content/backgrounds/map_printing.webp">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">Map printing and design</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 73px;" src="content/backgrounds/Geospatial-Analysis.webp">
+                                                <a style="float: right; text-transform: none;" href="surveying&mapping_services.html">Image processing <br>and analysis<br>(satellite and UAV drone)</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 82px;" src="content/backgrounds/consulting_services.webp">
+                                            <a style="float: right;" href="#services">Consultancy</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/baseline-survey.webp">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Baseline survey</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/needs-assessment.webp">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Needs assessment</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/infra-dev.webp">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Infrastructure development </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/image-proc.webp">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Satellite image processing</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <img style="width: 50px;" src="content/backgrounds/app-dev.webp">
+                                                <a style="float: right; text-transform: none;" href="consultancy_services.html">Application development</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                </ul>                                                        
+							</li>                            			
+                            <li class="dropdown">                        	
+								<a onclick="mobilemenuclose()" href="#training"><span>Training</span></a>
+                                <ul>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 74px;" src="content/backgrounds/gis_training.webp">
+                                            <a style="float: right;" href="#training">GIS Training</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">GIS Fundamentals</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Foundation of ArcGIS Desktop </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Data and Map Production</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Spatial Analysis</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Enterprise GIS</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">Multi-user Geodatabases</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="gis_training.html">GIS Specialized courses</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 74px;" src="content/backgrounds/sensing_training.webp">
+                                            <a style="float: right;" href="#training">Remote Sensing <br>Training</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Introduction to Remote Sensing</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Surface modelling</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Image classification methods  </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Hydrological modeling (Watershed delineation) </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="remote_sensing_training.html">Vegetation Analysis</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 82px;" src="content/backgrounds/autodesk_training.webp">
+                                            <a style="float: right;" href="#training">AutoDesk Training</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="autodesk_training.html">AutoCAD, Revit and Inventor Essentials</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="autodesk_training.html">BIM with Revit</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="autodesk_training.html">Mechanical part and assembly design and analysis with inventor</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="autodesk_training.html">Student Internships</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="span4"  style="margin-left: 0px;">
+                                            <img style="width: 82px;" src="content/backgrounds/equipment_training.webp">
+                                            <a style="float: right;" href="#training">Survey Equipment <br>Training</a>
+                                        </span>
+                                        <ul>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Digital Levels Training </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">GNSS Surveying Systems Training</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Total Stations Training  </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Handheld GPS Receivers Training </a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Unmanned Aircraft Systems(Drones) Training</a>
+                                            </span>
+                                            <span class="span4" style="margin-left: 0px;">
+                                                <a style="float: right; text-transform: none;" href="survey_equipment_training.html">Accessories Training</a>
+                                            </span>
+                                        </ul>
+                                    </li>
+                                </ul>                                                        
+							</li>                            			
                             <li>
-								<a onclick="mobilemenuclose()" href="index.html#training"><span>Training</span></a>  
-                            </li>
-                            <li>
-								<a onclick="mobilemenuclose()" href="index.html#projects"><span>Projects</span></a>  
+								<a onclick="mobilemenuclose()" href="#projects"><span>Projects</span></a>  
                             </li>                                                
 							<li>
-								<a onclick="mobilemenuclose()" href="index.html#news_events"><span>News and Events</span></a>  
+								<a onclick="mobilemenuclose()" href="#news_events"><span>News and Events</span></a>  
                             </li>                        
 							<li>
-								<a onclick="mobilemenuclose()" href="index.html#contact"><span>Contact</span></a>                              
+								<a onclick="mobilemenuclose()" href="#contact"><span>Contact</span></a>                              
 							</li>
 						</ul>
 						
@@ -117,7 +409,7 @@
 		
 		<!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div class="video_container">
-            <img class="video_pdts" src="content/backgrounds/gic_start_dark.jpg" style="width: 100%;">
+            <img class="video_pdts" src="content/backgrounds/gic_start_dark.webp" style="width: 100%;">
         </div>
 
 			<div id="page-header">
@@ -167,7 +459,7 @@
                     
                                 <div class="accordion-item-content">
                                     
-                                    <img style="width: 300px;" src="content/backgrounds/trimble-business-centre.png">
+                                    <img style="width: 300px;" src="content/backgrounds/trimble-business-centre.webp">
 
                                         <div class="row">
                                             <h4 class="span4" style="width: 100%;">Trimble Business Centre</h4>
@@ -177,7 +469,7 @@
                                       
                                         <p>Trimble Business Center's field-to-finish survey CAD software helps surveyors deliver high-accuracy GNSS data, create CAD deliverables, and leverage full data traceability throughout a project's lifecycle.</p>
 
-                                        <img style="width: 300px;" src="content/backgrounds/trimble-path-finder.png">
+                                        <img style="width: 300px;" src="content/backgrounds/trimble-path-finder.webp">
 
                                         <div class="row">
                                             <h4 class="span4" style="width: 100%;">Trimble GPS Path finder</h4>
@@ -197,7 +489,7 @@
                     
                                 <div class="accordion-item-content">
                                     
-                                    <img style="width: 300px;" src="content/backgrounds/trimble-access.png">
+                                    <img style="width: 300px;" src="content/backgrounds/trimble-access.webp">
 
                                         <div class="row">
                                             <h4 class="span4" style="width: 100%;">Trimble Access</h4>
@@ -205,7 +497,7 @@
     
                                         <p>Trimble Access is designed to support everyday work, including topographic surveys, staking out, control, and more. Trimble access offers an easy-to-use interface that will ensure your instant productivity. Feature-Rich graphical COGO routines for calculating points and features. Graphical staking of points, lines, arcs, and alignment from active maps.</p>
                                       
-                                        <img style="width: 300px;" src="content/backgrounds/Trimble-Terraflex.png">
+                                        <img style="width: 300px;" src="content/backgrounds/Trimble-Terraflex.webp">
 
                                         <div class="row">
                                             <h4 class="span4" style="width: 100%;">Trimble Terraflex</h4>
@@ -215,7 +507,7 @@
     
                                         <p>The software suite comprises mobile and cloud components that allow you to collect, process, and manage your data.</p>
 
-                                        <img style="width: 167px;" src="content/backgrounds/TerraSync.jpg">
+                                        <img style="width: 167px;" src="content/backgrounds/TerraSync.webp">
 
                                         <div class="row">
                                             <h4 class="span4" style="width: 100%;">TerraSync</h4>
@@ -233,7 +525,7 @@
                     
                                 <div class="accordion-item-content">
                                     
-                                    <img style="width: 300px;" src="content/backgrounds/trimble-total-station.png">
+                                    <img style="width: 300px;" src="content/backgrounds/trimble-total-station.webp">
 
                                         <div class="row">
                                             <h4 class="span4" style="width: 100%;">Total Station</h4>
@@ -243,7 +535,7 @@
                                       
                                         <p>Surveyors around the world trust Trimble's high-performance total station surveying solutions to maximize productivity today while offering scalability to adapt to future challenges and opportunities. Streamline your workflows and deliver maximum quality with precision optics and robotics, innovative product training, and our in-field support services.</p>
 
-                                        <img style="width: 300px;" src="content/backgrounds/GNSS-image.jpg">
+                                        <img style="width: 300px;" src="content/backgrounds/GNSS-image.webp">
 
                                         <div class="row">
                                             <h4 class="span4" style="width: 100%;">GNSS</h4>
@@ -251,7 +543,7 @@
     
                                         <p>GNSS solutions designed with the surveyor in mind. Backed by a legacy of GNSS technology leadership and surveying expertise, GIC provides surveyors and GIS professionals with reliable, innovative Trimble GNSS survey solutions that meet their distinct requirements. For more than 30 years, Trimble has set the standard for positioning technologies, and intends to continue that tradition well into the future.</p>
     
-                                        <img style="width: 300px;" src="content/backgrounds/Trimble-Data-Collectors.png">
+                                        <img style="width: 300px;" src="content/backgrounds/Trimble-Data-Collectors.webp">
 
                                         <div class="row">
                                             <h4 class="span4" style="width: 100%;">Data Collectors</h4>
@@ -259,7 +551,7 @@
     
                                         <p>Whether you need a fully integrated GNSS handheld for GIS data collection and maintenance, or a field controller to pair with your GNSS receiver and total station for survey work, GIC has a range of high performing, rugged field devices that provide everything from centimeter accuracy to communications and more.</p>
         
-                                        <img style="width: 300px;" src="content/backgrounds/cors-station-gic.jpg">
+                                        <img style="width: 300px;" src="content/backgrounds/cors-station-gic.webp">
 
                                         <div class="row">
                                             <h4 class="span4" style="width: 100%;">CORS Station</h4>
@@ -291,7 +583,7 @@
                          <button class="modal-close">Close X</button>
                         <div class="modal-content">
                             <div class="video_container">
-                                <img class="video_pdts" src="content/backgrounds/gic_start_dark.jpg" style="width: 100%;">
+                                <img class="video_pdts" src="content/backgrounds/gic_start_dark.webp" style="width: 100%;">
                             </div>                    
                                     
                             <div class="row">
