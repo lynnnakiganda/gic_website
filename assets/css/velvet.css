@@ -593,7 +593,7 @@
 	input[type="email"]:focus,
 	input[type="url"]:focus,
 	textarea:focus {
-		border-color: #c88b5e;
+		border-color: #eb7d26;
 		outline: 0;		
 	}
 	
@@ -1522,10 +1522,10 @@
 		display: none;
 	}
 	
-	#mobile-menu .mobile-menu-submenu-arrow:hover { background-color: #c88b5e; }
+	#mobile-menu .mobile-menu-submenu-arrow:hover { background-color: #eb7d26; }
 	
 	#mobile-menu li a:hover {
-		color: #c88b5e;
+		color: #eb7d26;
 	}
 	
 	#mobile-menu { display: none; }
@@ -1809,7 +1809,7 @@
 	
 	#contact-form input:focus,
 	#contact-form textarea:focus,
-	#contact-form #submit:hover { border-color: #c88b5e; }
+	#contact-form #submit:hover { border-color: #eb7d26; }
 
 /* ==========================================================================
    #Slider
