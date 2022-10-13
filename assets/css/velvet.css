@@ -1173,6 +1173,10 @@
 		
 	}
 	
+	table, th, td {
+		border:1px solid #4b4b4b;
+	  }
+	  
 /* ==========================================================================
    =Logo
    ========================================================================== */
@@ -1181,7 +1185,7 @@
 		display: inline-block; 
 		/* padding: 40px 0 36px 0; */
 		margin-left: 14px;
-		margin-top: -10px;
+		margin-top: 8px;
 	}
 	
 /* ==========================================================================
@@ -2111,7 +2115,35 @@
 			right: 25px;
 		}
 	}
-	 
+	
+	.contact-info-slider{
+		display: inline-block; 
+		font-size: 20px !important; 
+		letter-spacing: normal !important;
+	}
+
+	.contact-info-slider-div {
+		overflow: hidden; /* Ensures the content is not revealed until the animation */
+		/* border-right: .15em solid #eb7d26; The typwriter cursor */
+		white-space: nowrap; /* Keeps the content on a single line */
+		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+		animation: 
+		typing 10.5s steps(50) infinite,
+		blink-caret .5s step-end infinite;
+	}
+	
+	/* The typing effect */
+	@keyframes typing {
+		from { width: 0 }
+		to { width: 100% }
+	}
+	
+	/* The typewriter cursor effect */
+	@keyframes blink-caret {
+		from, to { border-color: transparent }
+		50% { border-color: #eb7d26 }
+	}
+
 /* ==========================================================================
    =Accordions and Toogles
    ========================================================================== */
@@ -3775,8 +3807,8 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		width: 101px;
-		height: 95px;
+		/* width: 101px;
+		height: 95px; */
 		border: 2px solid #fff;
 		color: #fff;
 		-webkit-transform: translateY(-50%) translateX(-50%);
@@ -3791,7 +3823,11 @@
 		line-height: 14px;
 		text-transform: uppercase;
 	}
-		
+	
+	.previous-events ul{
+		margin-left: 30px;
+	}
+
 	.blog-post:hover .blog-post-info { background-color: rgba(23, 23, 23, 0.5); }
 	
 	.blog-post:hover .blog-post-info h3 {
