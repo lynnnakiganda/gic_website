@@ -3006,6 +3006,48 @@
    =Social Media
    ========================================================================== */
 
+	.fa {
+		padding: 20px;
+		font-size: 20px;
+		width: 27px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+		border-radius: 20px;
+	}
+	
+	.fa:hover {
+		opacity: 0.7;
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	.fa-facebook {
+		background: #0e59a0;
+		color: white;
+	}
+	
+	.fa-twitter {
+		background: #0ea4ff;
+		color: white;
+	}
+		
+	.fa-linkedin {
+		background: #018faf;
+		color: white;
+	}
+	
+	.fa-youtube {
+		background: #cc181e;
+		color: white;
+	}
+	
+	.fa-instagram {
+		background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+		color: white;
+	}
+	
+
 	a.social-icon {
 		float: left;
 		display: block;
