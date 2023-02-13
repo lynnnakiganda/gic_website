@@ -1451,7 +1451,7 @@
 		border-bottom: 1px solid #e0e0e0;
 		margin-bottom: 0;
 		background-color: #8f8f8f;
-		margin-top: 13px;
+		margin-top: -1px;
 		z-index: 10;
 		position: fixed;
 		width: 100%;
@@ -1463,7 +1463,7 @@
 			border-bottom: 1px solid #e0e0e0;
 			margin-bottom: 0;
 			background-color: #8f8f8f;
-			margin-top: 160px;
+			margin-top: 81px;
 			z-index: 10;
 			position: fixed;
 			width: 100%;
@@ -1549,7 +1549,7 @@
 
 		#mobile-menu-trigger { 
 			display: block;
-			margin-top: 52px;
+			margin-top: 12px;
 			margin-right: 0;
 		}	
 
